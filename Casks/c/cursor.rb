@@ -1,9 +1,9 @@
 cask "cursor" do
   arch arm: "arm64", intel: "x64"
 
-  version "2.1.36,9cd7c8b6cebcbccc1242df211dee45a4b6fe15e4"
-  sha256 arm:   "fece643b0575311fe58fd67f1d0275aeabe6f83f7da0cd005fc5ba623e23718f",
-         intel: "bb620b77c19893893cc8f12c3be68fd8cf4e9450027c8cd723b90961a085ed8b"
+  version "2.6.12,1917e900a0c4b0111dc7975777cfff60853059d3"
+  sha256 arm:   "b4964005f1118ca5167f1fd82ded9d62451a91a2fcff75d4ff449004495b7eb8",
+         intel: "fb129ff22c3b062450f33b43cfcfdbd381e020d642718ca8eae7165ead7c5826"
 
   url "https://downloads.cursor.com/production/#{version.csv.second}/darwin/#{arch}/Cursor-darwin-#{arch}.zip"
   name "Cursor"
@@ -22,7 +22,7 @@ cask "cursor" do
   end
 
   auto_updates true
-  depends_on macos: ">= :big_sur"
+  depends_on macos: ">= :monterey"
 
   app "Cursor.app"
   binary "#{appdir}/Cursor.app/Contents/Resources/app/bin/code", target: "cursor"

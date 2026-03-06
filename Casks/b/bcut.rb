@@ -3,15 +3,12 @@ cask "bcut" do
   pkg_key = on_arch_conditional arm: "arm_pkg_url", intel: "package_download_url"
 
   on_arm do
-    version "3.11.13,21669956,90c55123a1b1881b18375a302b20bd4d"
-    sha256 "3b53a44cc519c161fa3d70b5be927658dd157eb05824eb98d81dd91be1d33d99"
+    version "3.11.24,23369602,a97c4192d11a838429fb9600044e67c8"
+    sha256 "c2ffdf539aed7dd235a8dee7ad3547f32a2803380d8e64367f7b11792ca1ad9c"
   end
   on_intel do
-    version "3.11.13,21669955,6208e9875f17706b8090b2ac034a908a"
-    sha256 "9054897275fde5b842ef3c075440d95f8ec1c5acc5ce34179ae8b182b88d307b"
-  end
-  on_intel do
-    disable! date: "2026-09-01", because: :fails_gatekeeper_check
+    version "3.11.24,23369604,2b551373e850489c924c4cbcf64aec97"
+    sha256 "457d27e80e1862d317423659597614ceacdc63b4542554ceabab6bdef97fe3ba"
   end
 
   url "https://boss.hdslb.com/bcut_pc_pkg/static/#{version.csv.third}/BCUT-#{version.csv.first}-#{version.csv.second}-#{arch}.dmg",

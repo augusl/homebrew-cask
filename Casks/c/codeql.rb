@@ -1,6 +1,6 @@
 cask "codeql" do
-  version "2.23.6"
-  sha256 "9aaae1731179f1ea9d0d5ed603ca5e4a84cb7842dff8971d441569d65bee7f30"
+  version "2.24.3"
+  sha256 "663ccd69db762f64b8e431ddad798c50d6fd844ae28ab631a89a7545f0077f90"
 
   url "https://github.com/github/codeql-cli-binaries/releases/download/v#{version}/codeql-osx64.zip"
   name "CodeQL"

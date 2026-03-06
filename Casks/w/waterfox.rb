@@ -1,6 +1,6 @@
 cask "waterfox" do
-  version "6.6.5.1"
-  sha256 "1e782b603c17470a3bbb86a3006a7683b0ab81199cfd04fe1fc1f5b8d2ff5750"
+  version "6.6.9"
+  sha256 "c5e658b0bdb75db8b5539401ccbcd780373514211ad53f8bfb98139d1b2de8ff"
 
   url "https://cdn1.waterfox.net/waterfox/releases/#{version}/Darwin_x86_64-aarch64/Waterfox%20#{version}.dmg"
   name "Waterfox"
@@ -8,8 +8,8 @@ cask "waterfox" do
   homepage "https://www.waterfox.net/"
 
   livecheck do
-    url "https://cdn1.waterfox.net/waterfox/releases/latest/macos"
-    strategy :header_match
+    url "https://www.waterfox.com/download/"
+    regex(/href=.*?Waterfox(?:%20|[._-])v?(\d+(?:\.\d+)+)\.dmg/i)
   end
 
   auto_updates true

@@ -1,6 +1,6 @@
 cask "hazel" do
-  version "6.1"
-  sha256 "134bb0e66895203d41f38f1345ae1bea49b68d644b1e144bcf57fe6a9bed2b43"
+  version "6.1.2"
+  sha256 "5f169b65ef2527901119187559c40fd17d693d8db723b738f3b8dbe3ab9f5726"
 
   url "https://s3.amazonaws.com/Noodlesoft/Hazel-#{version}.dmg",
       verified: "s3.amazonaws.com/Noodlesoft/"

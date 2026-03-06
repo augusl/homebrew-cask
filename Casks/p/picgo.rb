@@ -1,9 +1,9 @@
 cask "picgo" do
   arch arm: "arm64", intel: "x64"
 
-  version "2.4.0"
-  sha256 arm:   "640dd021a93ecbe782d3a16517aad7c32c03fbfa23b9725da7e27372d680cf06",
-         intel: "f7d065fbf762609a0d08681400011f4eb3521372c80db99b49c43e05b915f014"
+  version "2.5.2"
+  sha256 arm:   "10f508b759c06f85c996bfa47c6a30d8e4d37d2d6b76b43f9fe43387d31a6c35",
+         intel: "87812d59cb66e80d3ed05a1c8e8502c0f83d144ae84c1bd46a9107c0850db84f"
 
   url "https://github.com/Molunerfinn/PicGo/releases/download/v#{version}/PicGo-#{version}-#{arch}.dmg"
   name "PicGo"
@@ -15,11 +15,12 @@ cask "picgo" do
     strategy :github_latest
   end
 
-  disable! date: "2026-09-01", because: :fails_gatekeeper_check
+  depends_on macos: ">= :monterey"
 
   app "PicGo.app"
 
   zap trash: [
+    "~/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.molunerfinn.picgo.sfl*",
     "~/Library/Application Support/picgo",
     "~/Library/Preferences/com.molunerfinn.picgo.plist",
     "~/Library/Services/Upload pictures with PicGo.workflow",

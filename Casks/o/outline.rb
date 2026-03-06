@@ -1,6 +1,6 @@
 cask "outline" do
-  version "6.2511.0"
-  sha256 "ce1e2c2b903ace65553d6b5b9e8ebd183de73ac63aa022ce35b9b96c148801a8"
+  version "6.2602.0"
+  sha256 "29bab12196ebd27d09017100d56a380a39cba135cd8b964346a93dc8cce79409"
 
   url "https://static.outline.app/direct/main/Outline_#{version}.zip"
   name "Outline"

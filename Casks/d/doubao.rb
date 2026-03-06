@@ -1,6 +1,6 @@
 cask "doubao" do
-  version "1.81.7"
-  sha256 "5cbc1c085014ce5941e6a61eaf52d4a063e5013111fd393affe359aea0862629"
+  version "2.1.8"
+  sha256 "84eaa584e888b950b54a3b1c2a330777dbe63908cdb911af0724a144e392ea09"
 
   url "https://lf-flow-web-cdn.doubao.com/obj/flow-doubao/doubao_pc/#{version}/Doubao_universal_#{version}.dmg"
   name "doubao"
@@ -14,6 +14,7 @@ cask "doubao" do
     end
   end
 
+  auto_updates true
   depends_on macos: ">= :big_sur"
 
   app "doubao.app"

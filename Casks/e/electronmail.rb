@@ -1,9 +1,9 @@
 cask "electronmail" do
   arch arm: "arm64", intel: "x64"
 
-  version "5.3.3"
-  sha256 arm:   "c083d417f9ff8b1b82cc2fdab544fb8ce726fd0e3cf39a64abbc6e4efc9bd872",
-         intel: "fb36eb8719e3bae3ea6d638bbb2e854ad0e1d41fe9d4d7f884033ac75f92bcd1"
+  version "5.3.6"
+  sha256 arm:   "cfb8f95ab53517e897f140cb592e6c5cbc078e86cf2896452974dc1d3390fc4a",
+         intel: "ee2d29ee6064cd589719d52b1d74eb0c319d232f35a766087a2e50b24f06e465"
 
   url "https://github.com/vladimiry/ElectronMail/releases/download/v#{version}/electron-mail-#{version}-mac-#{arch}.dmg"
   name "ElectronMail"
@@ -12,7 +12,7 @@ cask "electronmail" do
 
   disable! date: "2026-09-01", because: :fails_gatekeeper_check
 
-  depends_on macos: ">= :big_sur"
+  depends_on macos: ">= :monterey"
 
   app "electron-mail.app"
 

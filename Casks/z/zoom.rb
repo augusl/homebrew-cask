@@ -2,9 +2,9 @@ cask "zoom" do
   arch arm: "arm64/"
   livecheck_folder = on_arch_conditional arm: "?archType=arm64"
 
-  version "6.6.10.69071"
-  sha256 arm:   "066e64315fc580a3f1776df5878fd75f9ccd5491ff4e91d444af3b7c5752c190",
-         intel: "5e06c292e587e151bc81cc472f9eb1bb2db1984e4f5cfae85bbc140d393b13a5"
+  version "6.7.7.76486"
+  sha256 arm:   "5a5f2782139fc06631c3356309270c7ae8a8c2128b3d8574e1c6a03a99f3194b",
+         intel: "0ec2ccec82ea6e3a2abec5edbf436ca6a3ff16fc572bd4846ccae453be4ea9cc"
 
   url "https://cdn.zoom.us/prod/#{version}/#{arch}zoomusInstallerFull.pkg"
   name "Zoom"

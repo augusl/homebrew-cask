@@ -1,5 +1,5 @@
 cask "microsoft-excel" do
-  on_monterey :or_older do
+  on_ventura :or_older do
     on_catalina :or_older do
       version "16.66.22101101"
       sha256 "94148628c6f143f07555b3d2a70cea61cef817d963539d281b092834496f8f16"
@@ -12,14 +12,18 @@ cask "microsoft-excel" do
       version "16.89.24091630"
       sha256 "81e02698c209b0681999737d9be8f685e12e43c8ceaf7ee2c7a08ad61adc99f7"
     end
+    on_ventura do
+      version "16.101.25100321"
+      sha256 "251accd3472778f3519c89258fdfe17797fc987935fd57fc5bf7b713eb4d0915"
+    end
 
     livecheck do
       skip "Legacy version"
     end
   end
-  on_ventura :or_newer do
-    version "16.103.25112216"
-    sha256 "c08b8006d8d906f6d2f5b3d00f575a546ce97d73e2f5dc13c46225da1bc939ae"
+  on_sonoma :or_newer do
+    version "16.106.26030211"
+    sha256 "96d53158e1cef672c65db6ed7c7a118d6284c83a419c933f5fc7d37ed4a1bfc2"
 
     livecheck do
       url "https://go.microsoft.com/fwlink/p/?linkid=525135"

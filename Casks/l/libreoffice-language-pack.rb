@@ -2,496 +2,496 @@ cask "libreoffice-language-pack" do
   arch arm: "aarch64", intel: "x86-64"
   folder = on_arch_conditional arm: "aarch64", intel: "x86_64"
 
-  version "25.8.3"
+  version "26.2.1"
 
   language "af" do
-    sha256 arm:   "950dbf32e98afac6758c788cfa51601dcec084d146b06fa8762efb6b5960b4e9",
-           intel: "6c7fe72080b6095a6cb0036f44bb4608822f57c5cc8003a9d8944df244b5d3d4"
+    sha256 arm:   "4f885baed459dfc91630b7964bfc1710cc156ca1a83d6caa24775a822f24dc95",
+           intel: "a1ef651d55900f8a5243b15bd484a92b1e93fd0bbb2052a5a54cacd6c7d78951"
     "af"
   end
   language "am" do
-    sha256 arm:   "6bafae05702587ba4a603744441bea3f69a23f362f348acf655445cd10e1b187",
-           intel: "d8984531c823354a4d4cbbfef0414b8086885ca3ab19e3048572b20def884bf0"
+    sha256 arm:   "6b81ab693626b9e4c2a51c2025d53e9356b290f8ab8e11b353e514615be313d4",
+           intel: "17eb4113d8e24d534588304aee2ff2186b709308fcda66ba1bb80e205c57e18a"
     "am"
   end
   language "ar" do
-    sha256 arm:   "3e49b236a0897eb372efbbeaf43e29a8f84b4c9c59947ac7b7af2fc535d71096",
-           intel: "c8ec61d90bd92569ea74d0e3901f84ec1972180f48092b0b98e5e2243a168aab"
+    sha256 arm:   "01e43167a27138b59b45714e18dde29d1efd5fbf74f8c51dffeb66063dd0a747",
+           intel: "cecea3008c476a8fef421cf59be5276ea496cb79fc93c5558bceb58676551f6b"
     "ar"
   end
   language "as" do
-    sha256 arm:   "6efae8dafbb1b6960db33cd1446f0c6af980811287f07153c72abbe91d044163",
-           intel: "3a17f2b12299ebf711514200c4e73ba6d4619c657bbd724a6ddd6c649ae09c48"
+    sha256 arm:   "dd9b6e8b0977e064f3e6335336489ea13fdc04e900af86ef4bede67127d43605",
+           intel: "71d8dc108af8fe0d670ed5bfff100e1ee5d60ca47dd13b16d89ee555ccc114a7"
     "as"
   end
   language "be" do
-    sha256 arm:   "d381ddbf6397bc03b98472d34018e08f09611c5380be2f275a2dacd2a5dc59b8",
-           intel: "a3433fd9b1a788dd278a45177185ea4ace75d0f177fb755600e02f5fde92998f"
+    sha256 arm:   "e19dd840062edf57721e61b9d210cfbb29eaa37285b53cfeabd6f9c72318a58b",
+           intel: "95a01270ecb791251fe305338254bff7eac5f4b442a7086f243ec6cd1fb90d60"
     "be"
   end
   language "bg" do
-    sha256 arm:   "e466029005d79dd61cb5306cc23af8da13bf2bb3777b5185429bde2126545400",
-           intel: "d5a4b966c46bb64469add3fcde1a73ed0c574411973c392a36ee14e45576c817"
+    sha256 arm:   "f178b6b781ddcab43db1192e29ad31a1cc2bbf9b7f9932585ad11159e17b6214",
+           intel: "50a667bdab0533ba3fbb4e359396eaacbd6af81bcc1e16217d1ce702b1ffa434"
     "bg"
   end
   language "bn-IN" do
-    sha256 arm:   "637fa8c4ad79b4532ed752122f6256e4d2d92e6f6d578289a1281a92e8d23637",
-           intel: "6a56699a2a361862bdd6b028e607b72888cb5189af1369b697fc3e8a8cc7ea5e"
+    sha256 arm:   "6b7eedd9df201945c7f3f16d09c9cfa11e1e65c7bbe146ab265e1e5a0d4ca21c",
+           intel: "8bdf72c3eed9103fed22229c7befbbc36cc1b83628d912489e2e445950666b58"
     "bn-IN"
   end
   language "bn" do
-    sha256 arm:   "5877034de7763f1e365ef59658f073b4f76466d2a3755fd920b35ff5641fa3ce",
-           intel: "a7716457b4098bcd2818dbc464a26ca457fdb4b774252076dee08cf52415385f"
+    sha256 arm:   "f90b239757847b7ff589609b0e3018bcecefb3d978957b11f253b893daf7014e",
+           intel: "a14abab52ae72c24cd7e20ce44b925f3571482df5e46589ac5d49d9c36414dff"
     "bn"
   end
   language "bo" do
-    sha256 arm:   "fb3e0ee118c966d41aa2327119cf84a22add46a599b412c1c44c6adb0c731d62",
-           intel: "c4e04c32488e1771061caf97286ef225e04654ff5bedfda2b9f6b6a93f7def7f"
+    sha256 arm:   "1db446adf908fd4570b6276e4e927291a4900e470f9300629e5949d53b8cdb7e",
+           intel: "809d8fa33bafcfcd5c8ee277462bf22eb5a2031416256e3ad35f723cb9787892"
     "bo"
   end
   language "br" do
-    sha256 arm:   "ee6b34e71aba5f81683118606778d55063dc103b80f9e85890738a2e6774999b",
-           intel: "b46aa1543b3a15d121e357c4ed35fb0937fa8ea949b168ba83599c11a1e80523"
+    sha256 arm:   "74ed8d2b713682dd324718f0e278c5fb65ae4ba34fe0c78c1cc674d81b216729",
+           intel: "1ca80e739e1fb756463ca8c320370415ae6810007325221283af6bb8dbd70d64"
     "br"
   end
   language "bs" do
-    sha256 arm:   "e0de330f739749bb68ff6df1e32aeedcce0fdd4f0ef3a6430ee31e0ad3897adf",
-           intel: "72bcc0d0d7f57493285b84e9657ab556bd979be80035a0fa83e542ffbc9ae448"
+    sha256 arm:   "75ca4d21dc3bb9db0485c7830993a9158c02a584195ba1aad22d3733f36cbc21",
+           intel: "59d12b234667945e6bcc384768de12c76708f6115f1f96638df90555f082a0dc"
     "bs"
   end
   language "ca" do
-    sha256 arm:   "52c035bd87bf489fe58dbbdd4cc0ddc82cc323f8b9d31a731f1d29b17eb5874a",
-           intel: "413ee798988ba0ed4f67e7021fa5c258c9104b91056b7adc7be0bb6151d78ac3"
+    sha256 arm:   "c1f62bbb9602b6dac9e0995a30fe99271c8eefe6dea56a5d44b940c1417ffe35",
+           intel: "b1119c8fd9e7d68d3f3636561135eb52da579c306c8b84acd8a3f9b3a8bc3b20"
     "ca"
   end
   language "cs" do
-    sha256 arm:   "2ed12a968cbec374f3eb8a95b0669e604aee5c4efe672c5ecb30f79ea814f049",
-           intel: "900105c0a8a47b3a5422a81bf16c1ecc10b667c9c1e4c5d4868bcb93bb4856c2"
+    sha256 arm:   "dc7cc931db63ec3208c7bf22ee627e2b93548cfd1ef57b50e7eefc2b63401866",
+           intel: "7fe8cad951f5ae5e5c36c22373c5d335c420e92d456fb407aa487360f00e8464"
     "cs"
   end
   language "cy" do
-    sha256 arm:   "961296942dc70601431d486fa9d4d42eb03ba246d2f3ed6abdd19be74185a408",
-           intel: "61078bfe7264ba5151eccf4331cb64eebc3bebc7743145c1f04d88a49a7a5448"
+    sha256 arm:   "d6d6605dbcf99f06f65a336b3951e2fff9ddb76afa190620fcc0ee63c16fee5e",
+           intel: "b311942f7b34ac954d416f2abdef98ed1419a6b59a364018b0b34394e9c38fc4"
     "cy"
   end
   language "da" do
-    sha256 arm:   "c2f6db41c6a2aff028f8d88b060d93c6d9abad99b3c3b6b6c79b3aee6164ac8f",
-           intel: "ba4ccbbf123e72f32580c5be8351ae54663494e6e06fb664c6377f207b8635e9"
+    sha256 arm:   "b5b17484915b53f8cdba1ca17a228fc945031eb142feb6bfc70d30a79a10bc99",
+           intel: "6a653cd1968172673ed341b6442258df5d4c37694d37cbd2ddf0cb4f3b3ddb79"
     "da"
   end
   language "de" do
-    sha256 arm:   "9365507e1bfab1018bffc4790148875e0399bb3b35fba7627067bb612d63e1f2",
-           intel: "7cacb09ff41b33168bb59b549bcbe73a079a8801a78a6ce2d4787320e76c84c8"
+    sha256 arm:   "86ad252ed94fcbe53112d36f8c146ac68b9350c8a7737e7b04c8156c79c83c20",
+           intel: "0b45d33b4f45b8e13080069ec9a757d64e573ec7f136fec09f0f776cd599b6ec"
     "de"
   end
   language "dz" do
-    sha256 arm:   "2846ef59228d11c325ede653bb326acdc050496cae7284316eb52b8d84aa0dfa",
-           intel: "0e317f3cfce7f56fb2e517b34932524051d55896baa7b7c89fc8483a33419109"
+    sha256 arm:   "0f0e6f9cec14f24dd2c4df182ac127ca0dff28d0d81b1600eb0c11454ee9bf9f",
+           intel: "8c62a058944d231ab4ff7a1d5e118ba4cf18b376d3e8ea6a88fad9763e1c1548"
     "dz"
   end
   language "el" do
-    sha256 arm:   "be1c5180739e84aac2a48938011cfddcb7b6852d2dbabf27b6878b2e41c11af1",
-           intel: "d95ccf11a4ef1239395e1e81c13588f74835cf1ac5f85ab9446dd7579541d485"
+    sha256 arm:   "9c139e395d4408bbc4f4acc0c7002c4c699cb068d2832701338de00558df6cd6",
+           intel: "75f4cb0d6afea943cad75bf76482ee7adc0ed2a5ffcba38df2ddfa6bac1db0e8"
     "el"
   end
   language "en-GB", default: true do
-    sha256 arm:   "29ccd8bbde808eea853c4a34ce7c389b055a014a6e5d27a19a063ceba8f06297",
-           intel: "50a94d1648e659713fcc6e2eee00a7beaccb2fa56a9f6f177e02f306364bafad"
+    sha256 arm:   "710b407975995d5eabbeb988ad17914c0f8776d73db5588df789867f1d2c42aa",
+           intel: "ed94fc1dd3c8c2ae5d6e6b406290017e0be623579b21eea3ce8e6df66aa8f699"
     "en-GB"
   end
   language "en-ZA" do
-    sha256 arm:   "0fc2daa5bf2fb2108403be5f8abfa190368f73bb33db1ba28f527bb619d05dbd",
-           intel: "721ede2267ff63673540b0a93a5c5bd21b52625b056c8a35032eba7f88a68a8e"
+    sha256 arm:   "62a4214bb0debefd08d8c4ed89c073982e38606081fcbd458dbc7c4e22d9876b",
+           intel: "807beec2f5c1a0e746454f0ce87ffe90ff458c32ca4726c0175530ccbd2a9bc6"
     "en-ZA"
   end
   language "eo" do
-    sha256 arm:   "a8bb9ce6dd439f58919c5c8c9c4d9b9e4a75cc27d7bedfa19becc3f5993864f3",
-           intel: "214bc3b48e46b1d3e820245d9fec567a6538cac32173c55975300504b25109ab"
+    sha256 arm:   "2a681ee9c1f3cdc2da714f9c25eca75f55392f4b2f8886d6e61db90ce5f0740c",
+           intel: "1d2450e989ac2f317c330cc866361cda73898624924b23d61b30ea930beca0c3"
     "eo"
   end
   language "es" do
-    sha256 arm:   "8fea1f0af6ce64f40b597c3e3bf0c5193d3286e7a5a384bca343604c6b1263a8",
-           intel: "c3b2e1e71b94d66d18751c98c59c81c8e0e54b263189c03ce30b65923c70cd86"
+    sha256 arm:   "3db0f47fc0eece35d44d35fc21670a60b81b53d8b21f32df5298a0bb9e6ceb42",
+           intel: "e288452419a8cf0281425ec260a4c57c5a9d06c1c7cdc582991d6d5b46761b9a"
     "es"
   end
   language "et" do
-    sha256 arm:   "cd86df4f9e04e23e998655d9b6d134c061f3cf5d4fd778e4516abbdd8bc30401",
-           intel: "18fca161ec16302e6e522fd7121d06a7ecde188e4aa326a363b2a64d1cb70853"
+    sha256 arm:   "d1d1f591f438b35c598340698328d51622054d4179f3cf37d61879f16a6df61b",
+           intel: "6d78c5c40ebdae271c8ef70dba3bd5cf26debfe6da63cc81732451d0e2521e7b"
     "et"
   end
   language "eu" do
-    sha256 arm:   "8e4bd4ae7cd40ea3525153d340900064fb8938e3ffd2161c6cea252377815922",
-           intel: "4ba792a47aa615d12d625caabbd98ebca410ccb4c5fcb7a5995215dd92fc14b5"
+    sha256 arm:   "6f351b69a6f186ae47172acfbb2f4b18f4574f308f3f747fee2864444068dc85",
+           intel: "ae2fc929b375c619b728920c5cffe0fb59640252799871408204e65bcc40da49"
     "eu"
   end
   language "fa" do
-    sha256 arm:   "22097e5ab7e76b00df881cdfe213ed27f759ba0c59a2734d998b94f6d893de06",
-           intel: "0426eb48199b3be34c0911f71a941123f4eebee20bbaffe1deae584c843665c5"
+    sha256 arm:   "df7f7872e058a01e820ad016d390ff85dbcff11cb223a4c08d53b1a6a1915206",
+           intel: "4a15e0896ce98e808b465454a0e9eb09ac2726b333e1e53a9a1459e8836a6cb6"
     "fa"
   end
   language "fi" do
-    sha256 arm:   "aaf3cf101659428e957614699b62163965a50bce04ed7615944f2fd00db89bb3",
-           intel: "189d9fcf4b050d2c4f79f8cd10186d297f87ab70fe2c76f437de295d78a27a43"
+    sha256 arm:   "8bb15d5364c661f0ec0646260b47718fadb1984ceabfd99cd6171cdaf77a3789",
+           intel: "9adaa7aae6996494ca0e596d981842df268a0550f81d8eec02d6ac3e47f32ee3"
     "fi"
   end
   language "fr" do
-    sha256 arm:   "9fe99ebc0aebe97e30b2bbe670db5c7bd1dc52f32d1aacb485763c9c0c1960f0",
-           intel: "1ea9591070a68ec15594b2983a80f5f4ce6a07879cd3f0c189240d0463550e8b"
+    sha256 arm:   "7579a9e98e9bbee0303a5c93c60636d651fa3cc5ef23167176e1d6763f23d79a",
+           intel: "ef91beaaf797726843d3617f5d00e9983b461b13e9a7b8171101d56d18901fab"
     "fr"
   end
   language "fy" do
-    sha256 arm:   "fc3566574f26959e9b96bf249c5dd6a53376a9664ce59f5decf1682d3180b4f3",
-           intel: "bab13a481ab338fe0fef8b65ec7005898baf546de93c5e4b1995358923c11b51"
+    sha256 arm:   "a0377bb05f5a819e681aa26ed81c122368e1359da489bb15412c18a4e69fde8c",
+           intel: "7db90f9b70af6346f0f8852451ba2b1deb18d6630876c61841a1b4e8f7525923"
     "fy"
   end
   language "ga" do
-    sha256 arm:   "c350b17d78eb2155dcdfef3458be2201da6882b2f63ab6979c807ae2fab06501",
-           intel: "5d2fbe1379ddc4bc6efd058b5e7c9015809104f1ee18a301d13f592998fdfa8d"
+    sha256 arm:   "064996614cc8f4395b231f8f6b8c74e8dfc6180b85d7c130a3b924c2b564cf4c",
+           intel: "f6c86ac0af24be667e755f0a47446c5bdf6be5ec099dfd5a01c3ad5ee17c7a83"
     "ga"
   end
   language "gd" do
-    sha256 arm:   "c0d89394a4d6ed4eacafa72c2c230d8d88f464f5afd51eb1e06270adbb85f6ec",
-           intel: "b6aff56853c6c4513c036c1b61bf13d27b967775515612cba84cb5992b066fb6"
+    sha256 arm:   "cafd37b89952f6d81cddfcc586fdc5eabb51e262650ead167c58accb676f1386",
+           intel: "3191afda3ac6ae13f729d143439cebd7260d42ce7adb65815f26e3fdb62cd067"
     "gd"
   end
   language "gl" do
-    sha256 arm:   "1e464695a55cc89ea6a105db4b7d24eadc56e21951de0198c5b0a02c992cf12a",
-           intel: "891c1f7d23981106d9780891445b6be9a996e25f0989ec284bb1e3a7b6f7caaf"
+    sha256 arm:   "26263a28a74a62c811e65ebfc00447f9eb2d126e0081cf50fe4ed5c14486f196",
+           intel: "b505680cef54fefaf41b7f4aa352a775396701c7a23ce3df32080243d1c5c76c"
     "gl"
   end
   language "gu" do
-    sha256 arm:   "3d6aac4a953022bc401b958d7e88f517d1f8b229761b66f8d9046d1593a4fabc",
-           intel: "588518c95adf82397ee2edea3e091a3a796c50d52dfce382e69bf89b39936033"
+    sha256 arm:   "36a4486e3576774cfd02526c709a515ac9e6b70ba6e9602280ebf8b5da4180a5",
+           intel: "551a8db06acb9cf51bded4e2a0d666699d4f075e52a1ee36d8307e7255df76bc"
     "gu"
   end
   language "he" do
-    sha256 arm:   "e0f6ea16c2c3b549864580025fb818f5f213696eb30d42a03eeba56b0523a558",
-           intel: "27ec5868ca805b9b957cd0498561249ece2661e185923abbcaeb72ccab5a8a2b"
+    sha256 arm:   "f06dfc82a96c26fc58b89a55b94bbcf8ae14c185d0f21c6bfbf5ca1c723d978f",
+           intel: "ca8312bd72cc500344167350d1f0d2a1b752e890565a99390b2dd1a2884805c4"
     "he"
   end
   language "hi" do
-    sha256 arm:   "70a727d3651a583d2ed967addca45721f0e7b66ce3a7d48438c564f9ff1d6716",
-           intel: "00e09032748c9b0381023b8b95b59ee60bcffb6ddef8ebf1181467e426a7b916"
+    sha256 arm:   "e0d4096e7a0a7514636270fccdc321eb57b6e7116617f6fd8f4dddaabe4119a2",
+           intel: "aad66c8a89b4839e3152fb6e7f3a6b6051b05640eb5155f0e15839182ad825aa"
     "hi"
   end
   language "hr" do
-    sha256 arm:   "0da63dccc1e2c3491a2c1f251f77f33fc640b92bfeb0dbfd49d3c328af2789af",
-           intel: "335faa3f85090f7f7d9dda2fa4ef93ff4abb06dc20c562e8143ea00982f09313"
+    sha256 arm:   "35657b4209f74f9d4faad12263800ec72969e774e6505c69f3044ab8afe2892f",
+           intel: "4b8e8d7b41cdc066ab37aff08d43e6542ca6094660e0bcf87656085aeb4ef30e"
     "hr"
   end
   language "hu" do
-    sha256 arm:   "9575bdb94e928fc0a3c7645d12539ed9e218e494915c9c7b6dd7d0ee5fa89537",
-           intel: "dfa5dfd89f0962e9feb9dd6b616a320182f71721aaf8708d3c828db2af0a2f31"
+    sha256 arm:   "a25956b932cd910e7cc8804e89112fa99f369d1bb48020bcb7954216661e6020",
+           intel: "84ace357d871b0d07176edda1efba418522c9a8d9f2de6f624dff7a1cd5cae6f"
     "hu"
   end
   language "id" do
-    sha256 arm:   "4a3f49e5e5ffbfc353650a65938bde4892f9f5d0382153380d2757a4930af20a",
-           intel: "bd3fce8211105e05427437d5bbc919ec25e067d9f3e148de26f9123e10694031"
+    sha256 arm:   "274bcf3e184802b021ddab4b0bf7ce047862b3d70532636eb00eac35a2844ed7",
+           intel: "44e5955ce7ee4211b1f08147cd4d8f367e2ed9b664349ec96480183eb26fbbe6"
     "id"
   end
   language "is" do
-    sha256 arm:   "08f7fc4f93983e5979e89bfe2695242aca21eb1727004ba915581121c90a9976",
-           intel: "50ada5f12bce4ae72d5241d46e232f21f9ffee2885fcc24427ff122451ee96af"
+    sha256 arm:   "824c3fd343204af3ec12efa79ee884789c0eaa3287b27ca47996734cba5a761c",
+           intel: "8dff08044865d49d0477d5cd63986ee759a44f50845bcccfbd6ae0f2a666714b"
     "is"
   end
   language "it" do
-    sha256 arm:   "c20895974cc138f5fce1020c8066788c59acf6969629916290017f4676e58b64",
-           intel: "c5a17aae949aa28823926a269911592a85f67761677c83b228d363b68050ea2f"
+    sha256 arm:   "87f7b8dc8f0a46e8f5f3c20249b8326947814d71c23a6b7a9e777ad6ca5c0e79",
+           intel: "2cb416d7495a437483ee97be824a7f34fea705bb37593b494153cab0864f2b32"
     "it"
   end
   language "ja" do
-    sha256 arm:   "27098d530048d1cd22be7f84eb6c2321562e8825b728aa61c4c7922776ffcdc4",
-           intel: "3bec0a3c01f3e0f582786fb821555c2dc50a04a9579e9bab815c8287c353bf9b"
+    sha256 arm:   "62e3cf6064267347abd06b746f53669faff1a073006a25b525e9ade4859506f5",
+           intel: "087694ebc0bc19e127b713b37748f51078d199bb1bcbfe78c15321372073493d"
     "ja"
   end
   language "ka" do
-    sha256 arm:   "708e0bfefebfae2aa34312f165bdd9fd44c33bc660b507a42dd905008c323eb6",
-           intel: "fd776ac8bdd354e7cf7266d0741cbf17045bbb6c6404ecccb5a7c37886bd2601"
+    sha256 arm:   "11263ad448e7cba6c8ec9acaaefd3a2ec4075d47d2aaa5affb4a8095ec8e6baf",
+           intel: "a8c6b927b2e4c711dadcc1f312c0b4fe0edbe24cf598764f0b34300954ae4a54"
     "ka"
   end
   language "kk" do
-    sha256 arm:   "d1d92d9dc67377672d4b94504e599c151c65f16a0e881e8a6aa14bd6b911b739",
-           intel: "9e5e0d5e0fc2ea510aa5b4ee0ffe110edad97bf708d1a4d05eeccb30f4d240f9"
+    sha256 arm:   "a1d188cf5450195d4df8ef3b1c7d2b8befe98946328f25c074ad0a9bda98f167",
+           intel: "7e2299a8fa4c206add1e42ed5f3b29703754a98f3f12f74552a727d0217d151b"
     "kk"
   end
   language "km" do
-    sha256 arm:   "4e81c187858fd4d3a4909af2f96f4fb2b1203286634f76a62184ee56c08d4f2e",
-           intel: "98de421cbf15bed4ee42c46ee70f099dd30b054aa3577a7092320d5834f63a5b"
+    sha256 arm:   "9830b6810a2f419848981519bacf31b8f967b35cbd84a466bed5a85baf297a35",
+           intel: "33db65691c9adc5693b62621cdaf5b2e04ce3abba102766146a0d20cf7263a9a"
     "km"
   end
   language "kn" do
-    sha256 arm:   "76192c0dc5496185466ff941d1957bc55ffefb5922ae74b4b1416b6f92b19f35",
-           intel: "e725ee245d1c316ac7428bd2aefe78d7722db7665c3c2a1f7fa8b7bc6a64474d"
+    sha256 arm:   "b261a0dc639e458e43dcbc079a1cb8fae2c3d07f9b4e216610e17cf6de6279ba",
+           intel: "9f6ae79d6b47105c215b45d504cb107d526de0b75853b46de580cb036fef39ec"
     "kn"
   end
   language "ko" do
-    sha256 arm:   "25017ffd98e23b4cf12cf111387a4f9f284bbc325fee8c666abdfc7019a7fedd",
-           intel: "28653bf4e7e9d8ac092d35fc58d18d76e0c56dd7b2b00ba3d4d2fb5c148e982d"
+    sha256 arm:   "bf525481d2b53695a12fee16ca398638020772f30e0dc8fe29b75475506629fe",
+           intel: "2214f2b459a7a974042c5a34ded79d92db02f944735627e048c1297411adf01a"
     "ko"
   end
   language "ks" do
-    sha256 arm:   "a2d1fdf27918c3ed47a1943d0e60ff61f9b3575fb9ecf5cd609f2b9c556cc0ff",
-           intel: "ecb8067ab2cd61a5386b334e69b688198d93832841d91988239884adb3881ce1"
+    sha256 arm:   "78ed592c584c67db69913f2778fef588c10335771fd1ffe30b7de6b15039f811",
+           intel: "ea43961aba67ccd0f180a3004c1b09bff0024852d9a5392517657612ccc52e15"
     "ks"
   end
   language "lb" do
-    sha256 arm:   "5d640cca33018b05882fa1d4214c2d7d643c82848edebc5f4dceb0fc0a6a03f2",
-           intel: "437bf8420f114f706e66792c3d1c91f80f10c3eace970c10eba5c98c6cf5ed21"
+    sha256 arm:   "fc3536a7236ab5644dea226b68dd7d9a362038a31f3660b8cf3ae81fac5cef87",
+           intel: "f1ec76a9d1c26fba6339c478fc3786b5775b7fc0ed65b7135eb941189368e5f2"
     "lb"
   end
   language "lo" do
-    sha256 arm:   "199e610e1517450de5f9df08048e9a15953a4a63f7da1cdd12b858c448b02e96",
-           intel: "6dba41bb7ab1937bb0629aa505f79e27836357697bff8773bd2bf73316308fc9"
+    sha256 arm:   "3c22d160e51f626ebf943584abf57ad106d282e534ce03bfcbf23797c8800216",
+           intel: "61455371b3244404f533bdf8d909b83ce89fb05b826812406022e4b0608da23e"
     "lo"
   end
   language "lt" do
-    sha256 arm:   "eade96c76b7b0350bb9013a748284a07ce14fdf9c15a1333ac18d9e65bc362af",
-           intel: "5bb3d6c41e98c53c3767bc2fa8d167bf27ec95670ee7da63af5eb639cff163fb"
+    sha256 arm:   "71f5f8f9f2a83874d5f45c23ba1cccd9286303a483ec85933ee81ad8b819d6b1",
+           intel: "8dd2e51e00242df3c18965ab2e6a135d5881dee608e20707409fdd27aa09cec5"
     "lt"
   end
   language "lv" do
-    sha256 arm:   "4af77120f1e3876b121c08ca9493483456dab2420039ad687d614b7b38d83ad2",
-           intel: "718f9c28772aaeb7861759b34caf78476bad596efaadc39a63def36008872db6"
+    sha256 arm:   "e8c4275b955bf9f0fb80ed0898f72d375e8b305b2847adca9522daceb4467bdc",
+           intel: "5b4a72c47d0a5981a56305dc231e75f4170aae551eb6e5ed60c6f3b4636cc7a5"
     "lv"
   end
   language "mk" do
-    sha256 arm:   "87f294e5435bda9ef414e3b50c280c867f438db71b5eb5a432fa311ec9d725a2",
-           intel: "3306e7cde031120ebf657dc8a3ca515215d4c25b5a868d66d5585fd9e34fd198"
+    sha256 arm:   "90e80714a93f5de42654f0fdd049a6775ff6346d3465d4bfd0bf7d3c364e75a0",
+           intel: "d6ff9b8376db6a4ab7e278d3e7effe3eec612069fd0a7afb78245d1c07744819"
     "mk"
   end
   language "ml" do
-    sha256 arm:   "b89cb292f79a605f87e1a27225da147ace7b7e578a0372b36eb752e50b16125b",
-           intel: "aaa0712b20e1765f8d7546bd1c4c4c6e42bd684f390ffcddf473bac510d3791c"
+    sha256 arm:   "e5d9a444fe3efc205b188a9d888b2e0f9442edb058603b772d11707b1b708afb",
+           intel: "dbe566a345ca2a5ab73f7c5ace40ebf24980ccd0687100c2df3d8bc1ff5d8260"
     "ml"
   end
   language "mn" do
-    sha256 arm:   "8d1d06486e159dc1a8ebe54250c6c768ae9aee0b4bc585c9b9a1120331ad97a8",
-           intel: "acbd11ae0db2e48fcb1c384c3218ed26d5e238d35bf9824ad7e7c8b4903bd63f"
+    sha256 arm:   "175cbe25049c048ccdb352d0e47a04d7795e80c9df23dafa55ed0f356ff1dd94",
+           intel: "9771840251ea321cb4d0b8c887084eb10dcf55de56577d6c851d024f695a0502"
     "mn"
   end
   language "mr" do
-    sha256 arm:   "52cc19c99b0b7edfb98d91c8edc0f6bf09dbb4e6b6be2688b225a6ab2bee51bb",
-           intel: "e288e7eb50f009c730b74c0f69254a434e7e6c1b76b4905ccf4d6733d9c5b8f5"
+    sha256 arm:   "b13df0dec8d0003e8541e2bb929c0aeeefd5f8e970c8da2f04999524c23bb834",
+           intel: "60ce8bf2007fa332daeeabbf9d4c165eb426ccc8b029f2170fe4c98687ae28ce"
     "mr"
   end
   language "my" do
-    sha256 arm:   "2083afa90869ecd2dd43f7073d7e4feb4c8b0e3f0d0ec4fa71374df30d66417f",
-           intel: "31e09b4260886c791f48781d4b2879890af05f05501727924f13e1ed494261bd"
+    sha256 arm:   "d5a798ceb5e99b85c3bd79a34b3c03273e4a35cf5f4a9ad966e0140f6c68c0b5",
+           intel: "84a5bff2af0308def1d23b1291bb3a20e4aa70a0fb143eb2af4912b3f879ea7d"
     "my"
   end
   language "nb" do
-    sha256 arm:   "77f40389e011e599d7440dc01658ce1cabe70e5ea417f42bdfffd194df383dd6",
-           intel: "5c93e8cacd5023f2bec998702ef0b2a19f57f22f755db42bc730368cca0762e4"
+    sha256 arm:   "9c60f29fd5965a3039440bad758f76d41fc3e9e164eb2980c55d3b745f5ca8cc",
+           intel: "81086970a83a7928333e087a22fd4f44dc95f5ff08f23b0d71e342a571198dc1"
     "nb"
   end
   language "ne" do
-    sha256 arm:   "d3e4761e0891e7ed167c13fb593e2e16062f3d90d80890d98327c9da913e95ed",
-           intel: "599a2f4450c06ba2c655957f3b328e763372431fd5330ffd81feea43fb24c6d2"
+    sha256 arm:   "d5bdaaa977f595eeb4b60cec2efea91a855dfe0db921229636128f9ba91fee0a",
+           intel: "8a0c39f81064133af5045a63c60b228b19f979f7a9c7e7ba94f19393081041f5"
     "ne"
   end
   language "nl" do
-    sha256 arm:   "9fa99645929c163018b96202b27efcd125325bd87b96437015eb168e32fab968",
-           intel: "ce15034a44ad417cb5c80d8df43a704591937e6e660ffcd1488058c11ea56e23"
+    sha256 arm:   "f725dffd39342719b67b76171e2b6054f6489a0873458f3097344e31e177415c",
+           intel: "fdb2f24498163349f6762dc972fdc25d736aaf0e88b0f768f9dbff7882f8392e"
     "nl"
   end
   language "nn" do
-    sha256 arm:   "f16344c307e30b2a5b6ab59f2de2bb974ab7595070f3fb071f5617c4471b9831",
-           intel: "7734362abf7aedb9ae7ca1c769da43b521c0a5c353434fc8fa8437360fabd020"
+    sha256 arm:   "2bf2265d024d3e8b593c19fe9f625cb7c6416c415a3c13bd61d08700abb40ea3",
+           intel: "3e59a6e8ee8efc394b9e9026269c377798fbbb72967de66d7490f414f2174ee7"
     "nn"
   end
   language "nr" do
-    sha256 arm:   "d38f314edbebd9109689c3f9a054c6c1268f8b08414f0811112f4a636c77a734",
-           intel: "b975be6edb7be931addd8ff02a79e1d110b1eca5047f0878588120de3c537cbf"
+    sha256 arm:   "ce174794a9a218d6d40ce5d6e328e0a91f4e77e7b308d5bc82bc8dc355317a18",
+           intel: "f1ab3b2a4115da609475f0eb295e38efe18508cb5aae044d9334900c565b9d9d"
     "nr"
   end
   language "oc" do
-    sha256 arm:   "dacaa3a4c0279db3c41e38a0dd22561378a3cede4d529c225c475c79ff69fd1d",
-           intel: "63b009128838119400904bb4796a42561a989ef4f1f4d1fe860393fd9065fd27"
+    sha256 arm:   "480d3dfb63e83211b24b1dce21326739994c1efad7362960f9188c32570877d8",
+           intel: "f16f6d092ef46b345c6dfd76cb80dc127f0e39ddd7e5338d8e51fb22b8ac2811"
     "oc"
   end
   language "om" do
-    sha256 arm:   "9b13e9967b7ad042e16f88fe48feffa83d1a23961876017b1f16160501a30377",
-           intel: "651158b956aa23dcf56de537041a7a3113c602e3672d063a7e50bccce288e3b4"
+    sha256 arm:   "11f34c78037bb489fa31014b78fa2e012934270e74b9e2f764e742612c0f9261",
+           intel: "09f91d2e18db44183ace2f691ebb2624313e44248a2db143953b7f5177a99434"
     "om"
   end
   language "or" do
-    sha256 arm:   "d0eebceead1059616e9692faff6c5d2df74563c1f8c41162e315bc113a37daa0",
-           intel: "929c4b75a418788f63b8d7283262cf25ced3dd43cdef9b3a3b4dceaedc7f86cf"
+    sha256 arm:   "75d71029706be430a79d25d52265ffdc6960bbeb48250e23adbf8776262ae6c7",
+           intel: "c5ec099fe58398b33da69591a6fa845eeccbfdf0ea893222e5d7ca2403aaf7c2"
     "or"
   end
   language "pa-IN" do
-    sha256 arm:   "1f02cc11980c291e9a4bd66d28bb4ba747e4ac392cf7c5e32ab7b49ab6fc2ec2",
-           intel: "50a948e458478cf569d020aad3d65b4d4f3dd3f4c21485a0e6fa9bbcfb3c58fb"
+    sha256 arm:   "5cfef5e9be956013761a629451ded8524ae25cfb7779a305245dd9fe22cece00",
+           intel: "6ac6918931a97361641abd9cfb07b4e00ef5eff0fba7c55857eca67b4872a7c2"
     "pa-IN"
   end
   language "pl" do
-    sha256 arm:   "3d24421c9833db07329889bc89179c2842666c7bb2ba6635832c00ad9d7a2b54",
-           intel: "8e3b37b2cab5e489054c24a1bb7c95f8e59cac43a2e07f92a6d185a189c6d2a6"
+    sha256 arm:   "6a064d7e45489814c77a9018cd988e62d11818db8060ab7de5da838669fb16aa",
+           intel: "d7293cee2ea3ddc8bbdb3d1f669d115adbf124c84f7015085ac38fcea63ca431"
     "pl"
   end
   language "pt-BR" do
-    sha256 arm:   "9de752a8a4525f814894a7ba40b6e1f63346ee792b738f3e58e1543df31044e3",
-           intel: "ac5282197439c0335b220eb8643b36a91db07541b4449f88e9006b65843325f1"
+    sha256 arm:   "7c6671eb32a5d45fd66a9bf14a33de1f1eda3d4fc16cf074b0b7d83c6d24b4a4",
+           intel: "4722b4eaaf46acb5b8233e5763f60a199ccb8fac882a660f8144a521d8d1568a"
     "pt-BR"
   end
   language "pt" do
-    sha256 arm:   "5b14b1ca4090e82f12d11265735ddd6b6f9a39af29c9e8057f079bca24a00b57",
-           intel: "2eb6b7da207c4c0e5cff51fe6dea366704d8a1051836859d61d0f156fbbc172e"
+    sha256 arm:   "5b2fb67f2a9f784889eac9bff4be2cb979d61c5c2440602009f5de25cb17b5e6",
+           intel: "83e46d576dbaa756d7b70227528cc5501c4cc239d3e3670a3201a460567662d4"
     "pt"
   end
   language "ro" do
-    sha256 arm:   "619c30ba909ae9fa717a7817c9d0047f0a2d52f45497d6626f5b69e0e7bbf3de",
-           intel: "cadfa09c0159ef0e263818724235e51140891be24bab770ddf37f876fe03c9e7"
+    sha256 arm:   "6cbbf537d25d294b962381cdcca4617cbb770a2374704ae91fa1e18ddba4f071",
+           intel: "e693c58a6de9b19a3462c12b1b5b7f2e7404991c20b144d7d9c7b55d44e5d688"
     "ro"
   end
   language "ru" do
-    sha256 arm:   "a32dbb9c11fd294ae81a7f226f6eb74bfc311cfef48166b0598c4b52dbf190f4",
-           intel: "10a821d3000aa39e7374ce9cfd5d96e959abba23cb25f9f354cf968e787b8682"
+    sha256 arm:   "6b378e4d3f495fbd86a0c232d70f168ee002cf66ded9d20d3cbdf43a38f79fe1",
+           intel: "07cc82ab2fb44b7937319794fbbe8ee627a629cf3e24ddd5cf47b4cd27b19e0f"
     "ru"
   end
   language "rw" do
-    sha256 arm:   "09d7a7f0a7577cb36de3227bbd3c00fcc768629e9e454396190c4456a691ef63",
-           intel: "455119770d1f4f4f4df60925ddfc34fd41f5c61074aa024b594b281b42dda29b"
+    sha256 arm:   "8e533878f0c93deb899619a4ac37f531e79bbe8a39a2a15cd7977e38b03f7a9d",
+           intel: "dfe41edbe983445806aff571ae2bf700a3d0997327551d8f4a0708d857787f9a"
     "rw"
   end
   language "sa-IN" do
-    sha256 arm:   "1456e1a9c672862c3176fadbf1ba1b76b99b4b76caf9217b8009ac6e15e9be9b",
-           intel: "9c18d37bf9750e7aaaa2fb268376eb7595d1daa2f3a3572c6349db2dedfc443d"
+    sha256 arm:   "18b180b8a8771925b7e36e00f0dd925f0b0081c06889237b30a77374a1596bc2",
+           intel: "fd8ef8f806e5a1ccb710b725420b94cec34c68affeda61d53d8c849e5f02a67d"
     "sa-IN"
   end
   language "sd" do
-    sha256 arm:   "c7798bf27deee6f636610bd48e716332ef7965a08d7542c4e42b10e543070cb3",
-           intel: "6c54d522f0c3d9fc816514d530a62eae27d7a7aa66cf4603b588901ee0bd8cf6"
+    sha256 arm:   "1be4d22f6f77dbc410affaabd9d5101437968bba2ac22c6fe4c4adab00e3bb40",
+           intel: "3cd27adb9181aae30b4c2e869302d2add816034a8cbb740c16f2e81f82d0f775"
     "sd"
   end
   language "si" do
-    sha256 arm:   "101afe9d0c50b39ca430486a152d88d57dbfe38a44d967e533ecb04eaeac989e",
-           intel: "088ec734156f4ec30801457447fe066c77cac1b7fab3a7a71ea2d99852df23fa"
+    sha256 arm:   "3f1899730498b2bff5f2ad4604d3a083d173f313a5a117a80e3b45edaa982cb4",
+           intel: "5e95d7efd551bf78108dab06762e3af0a56338c346b59151bb65d60435e033b4"
     "si"
   end
   language "sk" do
-    sha256 arm:   "4765cc699c720ab132ccf7cd46875d9aa6c954165e6b9dab6ebb1ea0aa018dd4",
-           intel: "f58a1a924977d0520257be573664f87a01213ad5a1f40a5c1fde09bd298d4d9a"
+    sha256 arm:   "c1a2e7a677296217187a59e63432cfdcb5dc752371f83238c67eb43fe42c2359",
+           intel: "c9c2a5a0f9bd2a7dcbeed4c427d78536a590eab7b901c62c84c755befed8d98b"
     "sk"
   end
   language "sl" do
-    sha256 arm:   "9be3cb521ceeab2d118fe691b14dfcb239219543e33d000de17ebd64607354fa",
-           intel: "b16aebcb80b53ed589f275861c39673f84181a289454b9c1d817decbeb6793fc"
+    sha256 arm:   "681821025868e170c2b136c4eb0e2d312a308fe4d3c1502b90d3f6cdb087dc68",
+           intel: "78ddb8f6bbea7a76aac2b94b9da208e53b9b88d9c6f70abce7f675548fda2be4"
     "sl"
   end
   language "sq" do
-    sha256 arm:   "cc092313950279ca104c1185dcc279d6a5ec3c0965508165d9fabe9cef57e935",
-           intel: "89907d93533159db1e8492a70d40f9a11de73d9ea2422685d42d92f7555b058c"
+    sha256 arm:   "5e88baf28cf39fce1fe9ec0e0df1d60c2ef21791872ba18ff9ed0b490575c666",
+           intel: "383352503fd02fea24bac2c7ae071bb0412798305c4068b26b03852dcc5aa1db"
     "sq"
   end
   language "sr" do
-    sha256 arm:   "d2722bcd6b465d0e39957d56dbba7d440f74184a0495618eb899f87272e9d7e8",
-           intel: "91a76d51b13e8272878a885ca9278ceb43ad58826245a5151be746f884d0c5d5"
+    sha256 arm:   "995e89d96afa4cb89354d8258275880de12721bd7fa4cc29d3cfbe637d1fe1cc",
+           intel: "fe8a0cfc9a29c3086150a7bd97e67ace6789592050e522ef55c09d7e78bbcac3"
     "sr"
   end
   language "ss" do
-    sha256 arm:   "bc87e7fed1b972597ca7d41d7fae07298ed21251119847358d13052261ca4a35",
-           intel: "75820fddb9af303daf8b18f54eb48c89237e1ee13e9461cf28d47fd772d50fca"
+    sha256 arm:   "83ae7c2670a3458eee2a0330dc51dd9a4dc5c8e99bfe56df0dea4e7ef1c9a125",
+           intel: "8b9dba8558b4748a2e481e1329dc2d76ae459d50b5b2f8ba3215bc1b56fc65e4"
     "ss"
   end
   language "st" do
-    sha256 arm:   "6770f02dd9ad1008e7602c1b897318079dd01127bc32330dab908587dab8c3cc",
-           intel: "f231c811b5a794d5612cedd968d9cc65558840c402f6577a9e18d754b5a7a700"
+    sha256 arm:   "5c516f16b5105e87bceabf9d45bdff7edb40fbb45a51257726e1ffdd667f5928",
+           intel: "e35659efe8b9dc3e420a30c1797303a21070d8644fee34f8efbc6b02336f218c"
     "st"
   end
   language "sv" do
-    sha256 arm:   "95cd67be3936cd40411fe4727f1d553d9d46b430c2bb0c59fa3a7e7689231857",
-           intel: "3c31d5c933aa21d5a1edef4af58d70ac5d751dfe78a6c66a03e53d320fdd438c"
+    sha256 arm:   "5e8ff1a8b67a49d5017ff3f4cd9bb9e0ca50ffc7f9d2110f42455a309e03bf20",
+           intel: "ed1cc230173d600109770460e2755bd301c1027e3b1cf0bc9be140874357e23f"
     "sv"
   end
   language "sw-TZ" do
-    sha256 arm:   "97ab3bf3c6c3f5959c5cdc3f92a270658af1041f4c96918374302ddd984426b6",
-           intel: "eaff2c9b0542c7adebbe1145c406c6567589dcabfbae5926359cd5cb7e6407ef"
+    sha256 arm:   "cfbc2907b5130543d53b7843cc5b241202437599004c563ffd2435d47d8dc6a5",
+           intel: "d97c8e92bd873ce12eda4d390049ff030803f30a86a02213dea3828a6b49ac72"
     "sw-TZ"
   end
   language "ta" do
-    sha256 arm:   "50db0c088bc4cac089cb7f2730062d6d985a230d75091cff6eb11694b0b4e9a5",
-           intel: "14295e29ee9168c245394e5904ffee32a45404841dfe64dadb8cf6b54cc247d9"
+    sha256 arm:   "ae5a66feb6721c084a31db61f026a5f38cbe2b411655cac438cde27f699dd18b",
+           intel: "e5b5fc09782806dd9b73fd81ed70f6da3c8d27c91f261a8324edb531b5e66840"
     "ta"
   end
   language "te" do
-    sha256 arm:   "272d40ef9eda9dfdad85e1fdb19f1c3e899b7216ae6c830da0775f497c4be113",
-           intel: "370e4f24766d367038fb52e7646d70805df0026881385b28fef90592ff901c0b"
+    sha256 arm:   "800eb06bfcbdcc52d63d272cb9eb4a8326a6b43b285d54511d4f52b44696004c",
+           intel: "e667f22ded1f9148b300c40c11e26db60b7e0acb9e9d64b663927d3a0534bdea"
     "te"
   end
   language "tg" do
-    sha256 arm:   "002a9b33a5880a3a1c8d5abddf59fc75f66a14d240bfd82e2490334980afbdf6",
-           intel: "829ef8705580a3852d3209830c49411bc3dc90a20d06935fc9a00fd97febd7a2"
+    sha256 arm:   "14ff14db2cb3230dd752bc8c5693bca2de80489cbd02e731899e7987d21a1761",
+           intel: "54b66f71fcf3e03e7347624d351da3794877775de04b33f91d6d7bcee61f033b"
     "tg"
   end
   language "th" do
-    sha256 arm:   "792be6db02dcae2315b5f14be30aa9275dd690489138dab6eea4d9b87924b37d",
-           intel: "f74500b0f6bad1d02febb509179de4dcde5bec42025baeffcc2af7b1df13855b"
+    sha256 arm:   "6fdf150b495ef41842b9fb3f39570d9b9d8eb00ab503bb65510f32efcaee8b04",
+           intel: "6388261a1899c179d1d93b74fe73f6ed2ada03f163d31ca4ad5039a955d0ad58"
     "th"
   end
   language "tn" do
-    sha256 arm:   "f01dfba56225377c10b0eb6cc549972e2dbad4edc560bc5b40f2e99930ef804a",
-           intel: "92cda4aed7435a6d3e7b52b9af68c37e310c16ed9865a0082ce077615757ba19"
+    sha256 arm:   "401e81dbfaf2406529727abc1f0f02271ea11d54683d64c805b3b98beda3d0b6",
+           intel: "171d471fd5f8f08778cd12e91909072727bf0360d15bc87eb117136d890bcc95"
     "tn"
   end
   language "tr" do
-    sha256 arm:   "6992cfdc5c2535e754e9fb8fe147593c9528272d5a5b38db07df6727eb215cd2",
-           intel: "3641f1b8ca1e57bbf7b881220e93e66054c261ba05ff76b2f27fea55a574456e"
+    sha256 arm:   "4ce9cf63f545aa059350e85be725a55fe325f185bbac29d073eda60d88076ea3",
+           intel: "ae35c12ca7616815ababd8d482261d06e544d14aaa346ee1c5731f4af37a7a76"
     "tr"
   end
   language "ts" do
-    sha256 arm:   "34c32cad8ab1e30ce433a8c320923395dcdc4a7910059e2a2ee8d68306216c3e",
-           intel: "560e9661b2b9a849840e3d3825b64f743c5b9d308853dd2aa47e1d1b0c3dd770"
+    sha256 arm:   "8acc418980efad1a192f7a2a97b77d90195699b748128c7d4bcaf13efb0e07db",
+           intel: "c255221610815a6540f645548f389025f319a5da8ed114fe05b9a7a2020d3c34"
     "ts"
   end
   language "tt" do
-    sha256 arm:   "9163675efe6d932592b89c8dc6dc732bf85cbbe51553f0f6b6771b213591de20",
-           intel: "eb8e2ee280ae855cb31a1d9744848106196e198602b2929a1f5bd02abb852917"
+    sha256 arm:   "4be4f8d55c93ea844de01159a49040d48d622d5e1f42f386cedb98a646784dfa",
+           intel: "1650f76f7418268e0dc54b25f201c5951a1ef089f805d03da573cf79d2f35423"
     "tt"
   end
   language "ug" do
-    sha256 arm:   "b01eb24761de17616c4787ede15761e2f7e7a779888c54fd085e9fd22e340d87",
-           intel: "ca8c48bd6d13416f19cfec3745b1f261838d4f6698eabb9640b8e36fe59208a0"
+    sha256 arm:   "ee3c3fa078842bcb34dc53d2bc7609b3133fade8368b7e2307ea1c2b58df9f4b",
+           intel: "e3bb5285f6dff35edb2db04c3b1ac589e077c6ce8d3e6eb3042145a65e1d6056"
     "ug"
   end
   language "uk" do
-    sha256 arm:   "dab0acaecf07c8889b53c0ed9d5719601885f240fb4fb66a760df3147bc70639",
-           intel: "47a260ad9e3b003da48573d7d5e27653397fe8913ff306efe01120ce08aea371"
+    sha256 arm:   "8b14f8d1ab71a2464fe4149e6806f18ac5af73a69da5ab4c11a514654a77d757",
+           intel: "42de3738c918a9a13e9c29947925dde709580a80168445dc267c18f0797de855"
     "uk"
   end
   language "uz" do
-    sha256 arm:   "eef47648989a99c8f97d73c3221d08088b5356c24c29a35a073c67d71e40c8f9",
-           intel: "0afd0b8542932bd8c5c4a3f1402e02eac6685a9b23fa6827ce2f61c29d9234e7"
+    sha256 arm:   "e91b014152527c18a455dcd8115d5e97ab213f9991e29e9d8ffaa83573672759",
+           intel: "1eaf6d1a5322b9a468a080f93cc8f7a26fc9baa73820a09b252af3d8bcf01e89"
     "uz"
   end
   language "ve" do
-    sha256 arm:   "20b17d7b3af73eafa484ac332fa59f4e50de6f738f79ff16896e71a5d7f19f3e",
-           intel: "0ab2d5f11d45e06999849b940ce5b3675e10d2e375ed1ae388f59e7bae37de66"
+    sha256 arm:   "2188bbb181e66b74defa12f210f1d7303be174aff7af18b91b95efcb28c365d5",
+           intel: "40176de38a1c541baa2f88eef55e69d67d7ed3e4d54bff6169c44ea136d2a13c"
     "ve"
   end
   language "vi" do
-    sha256 arm:   "0d8b0e23f31fce809397de458ad8f0ab27cf692b6dd03e3909a788130c59e6cc",
-           intel: "6feb86bc8e1dedeebd630fb508042c78bb50f17d354efeab6a3e31c9131fdcf9"
+    sha256 arm:   "1627ecc175b058a3d227b0c87b5637d8b701a7a1afb202a1be62cc90dd435905",
+           intel: "9bdf928557e586623cb4ac1cea1a7c93537ecf33e2736b508a8b5ec68c0887fb"
     "vi"
   end
   language "xh" do
-    sha256 arm:   "b53841f81b74655758e276c69714601e88d41f7623ee21a53017b549aa03745b",
-           intel: "e148508475f853c8dd6087d71f8f5ca047e2adfef668862beefc3acbb72756bf"
+    sha256 arm:   "142babd09a445bd40f9624d0c1608cf0371ffecbc8781d9efd042458754dfb2d",
+           intel: "8a6840015221c3009b6af634bd5d9bbbf45b20db9ff0a285fc67b6bba0fabe08"
     "xh"
   end
   language "zh-CN" do
-    sha256 arm:   "a5071bb397ba131c4a497c2fd1cb3db1b1b04d588bea7f1a9b21b908fe0c6157",
-           intel: "9eeb72fb4196ec98ad54b48653c69cd0922c3a519227e3cf946220618706e9cb"
+    sha256 arm:   "afbdc5059e22ce4d6a57d5ff64d581ce38d440b145609f042a289e2202f7d759",
+           intel: "996fff8dee027b807b9e049fe9d235a7824d1be42ec9f1ca1692481b7d4052bf"
     "zh-CN"
   end
   language "zh-TW" do
-    sha256 arm:   "dd8fcb3b2339b1ca009edb7783e7171c6856446fadc4f9e3180c8cefb3ff6e81",
-           intel: "6e8f409be25512dae617811c9eb7634a229e709f2114df9a1f963064f6de8021"
+    sha256 arm:   "0f5c160db645b4c9eb3cd59cf9df017405a5aa309cf18cb9a6eb49fc9c5bedbe",
+           intel: "514fb58b754b661da9b5ac480cf4b84de8a828aa8a5b51475e95c0b4e2da4df5"
     "zh-TW"
   end
   language "zu" do
-    sha256 arm:   "f1611b550ca725e65c37eba12c8a7b52efbb968e085e97560162c1f0b76c5d96",
-           intel: "ec61e3c8bb13d566f74b1c6a50d63b829a6a15acbe360fa5101144b708c48bfe"
+    sha256 arm:   "80a23375519dbf24d2400661e234e7b760ce50af2a8230e0da7e026c62274533",
+           intel: "3d107927df057dfd7eb8de58b4a9bed0882b4f0426fc07798a3330ed9e32806c"
     "zu"
   end
 
@@ -543,7 +543,10 @@ cask "libreoffice-language-pack" do
   # It is present to make clear an uninstall was not forgotten
   # and that for this cask it is indeed this simple.
   # See https://github.com/Homebrew/homebrew-cask/pull/52893
-  uninstall delete: ["#{staged_path}/#{token}", "#{staged_path}/SilentInstall.sh"]
+  uninstall delete: [
+    "#{staged_path}/#{token}",
+    "#{staged_path}/SilentInstall.sh",
+  ]
 
   # No zap stanza required
 

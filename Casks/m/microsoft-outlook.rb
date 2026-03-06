@@ -1,5 +1,5 @@
 cask "microsoft-outlook" do
-  on_monterey :or_older do
+  on_ventura :or_older do
     on_catalina :or_older do
       version "16.66.22102801"
       sha256 "bddede85956713be21fdb5ab72be07ecefd05552752e8e60c649e6a15fd0a2c2"
@@ -12,14 +12,18 @@ cask "microsoft-outlook" do
       version "16.89.24091630"
       sha256 "24731ffca0b78c02f2544b145b4a103bd11b724fef0dc938bf5899e156495a72"
     end
+    on_ventura do
+      version "16.101.25100321"
+      sha256 "db4ce5854bbcb60284041f7a04e2f37e317cff578857486af78069b3935c5e86"
+    end
 
     livecheck do
       skip "Legacy version"
     end
   end
-  on_ventura :or_newer do
-    version "16.103.25112216"
-    sha256 "be69ac303a8e72e6d2862cbe9be95839ba5a004d9ddcf83afd94d47cd2af30f1"
+  on_sonoma :or_newer do
+    version "16.106.26030211"
+    sha256 "d6fcf5424f5cf05585001eba29761212fb1f5aabcc34789a9195439cf0ada339"
 
     livecheck do
       url "https://officecdn.microsoft.com/pr/C1297A47-86C4-4C1F-97FA-950631F94777/MacAutoupdate/0409OPIM2019.xml"

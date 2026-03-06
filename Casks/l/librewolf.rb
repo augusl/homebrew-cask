@@ -1,21 +1,24 @@
 cask "librewolf" do
   arch arm: "arm64", intel: "x86_64"
 
-  version "145.0.1,2"
-  sha256 arm:   "8b7350f328c494c6af9ca195d17e71319b507129238b64747c251b2fccc41755",
-         intel: "9666dc0e6afb65e926ec84d2976f6171c2b0a1445c32f0d9fa495b3d8b073c40"
+  version "148.0,1"
+  sha256 arm:   "bd26709405f5bae9df8b58f3c09bed96f8d68fcc21ed1b5ca55d8c75bca1879f",
+         intel: "e5170f572699292b4be2a26258d71bd796ae586a9e28f148e70cd9cca1538f00"
 
-  url "https://gitlab.com/api/v4/projects/44042130/packages/generic/librewolf/#{version.tr(",", "-")}/librewolf-#{version.tr(",", "-")}-macos-#{arch}-package.dmg",
-      verified: "gitlab.com/api/v4/projects/44042130/packages/generic/librewolf/"
+  url "https://codeberg.org/api/packages/librewolf/generic/librewolf/#{version.tr(",", "-")}/librewolf-#{version.tr(",", "-")}-macos-#{arch}-package.dmg",
+      verified: "codeberg.org/api/packages/librewolf/generic/librewolf/"
   name "LibreWolf"
   desc "Web browser"
   homepage "https://librewolf.net/"
 
+  # There can be a notable gap between when a version is tagged and a
+  # corresponding release is created, so we check the "latest" release instead
+  # of the Git tags.
   livecheck do
-    url "https://gitlab.com/librewolf-community/browser/bsys6.git"
+    url "https://codeberg.org/api/v1/repos/librewolf/bsys6/releases/latest"
     regex(/^v?(\d+(?:[.-]\d+)+)$/i)
-    strategy :git do |tags, regex|
-      tags.map { |tag| tag[regex, 1]&.tr("-", ",") }
+    strategy :json do |json, regex|
+      json["tag_name"]&.[](regex, 1)&.tr("-", ",")
     end
   end
 

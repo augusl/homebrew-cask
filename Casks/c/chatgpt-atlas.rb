@@ -1,6 +1,6 @@
 cask "chatgpt-atlas" do
-  version "1.2025.323.6,20251124201745000"
-  sha256 "6b06c7045f972b45abe0c7ec88c27cb9a3a20fdac212a70643af46899ef73125"
+  version "1.2026.56.5,20260302173142000"
+  sha256 "3c812979915e12568097bd52c0cdccee9cb5a68e54559e9feebcdf84da2863fe"
 
   url "https://persistent.oaistatic.com/atlas/public/ChatGPT_Atlas_Desktop_public_#{version.csv.first}_#{version.csv.second}.dmg",
       verified: "persistent.oaistatic.com/atlas/public/"

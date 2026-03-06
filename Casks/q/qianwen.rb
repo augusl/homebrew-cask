@@ -1,19 +1,22 @@
 cask "qianwen" do
-  version "1.2.1,251121206"
-  sha256 "5fbd320c52f8a3f7a990ee7b461f11d154562c64ee7b96cecc0ea1772ab9e5ec"
+  version "2.3.1,2602272247"
+  sha256 "85e5ac5742c4bc4ae296ae6a3d87b72a59a4e5b2570dec74592fc847aacdad65"
 
-  url "https://qianwen-portal-cdn.tongyi.com/native/app/#{version.csv.first}/darwin/universal/qwenclient_setup_#{version.csv.first}.#{version.csv.second}.dmg"
+  url "https://qianwen-portal-cdn.tongyi.com/native/app/#{version.csv.first}/darwin/universal/qwenclient_setup_#{version.csv.first}#{".#{version.csv.second}" if version.csv.second}.dmg",
+      verified: "qianwen-portal-cdn.tongyi.com/native/app/"
   name "qianwen"
   name "千问"
   desc "AI assistant and chatbot powered by Alibaba's Qwen model"
-  homepage "https://www.tongyi.com/qianwen"
+  homepage "https://www.qianwen.com/qianwen"
 
   livecheck do
-    url "https://www.tongyi.com/qianwen"
-    regex(%r{"mac":"https://qianwen-portal-cdn\.tongyi\.com/native/app/([\d.]+)/darwin/universal/qwenclient_setup_[\d.]+\.(\d+)\.dmg"})
+    url :homepage
+    regex(%r{/v?(\d+(?:\.\d+)+)/darwin/universal/qwenclient[._-]setup[._-]\1(?:\.(\d+))?\.dmg}i)
     strategy :page_match do |page, regex|
       match = page.match(regex)
-      "#{match[1]},#{match[2]}" if match
+      next unless match
+
+      match[2].present? ? "#{match[1]},#{match[2]}" : match[1]
     end
   end
 

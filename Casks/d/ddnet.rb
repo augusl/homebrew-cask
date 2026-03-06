@@ -1,6 +1,6 @@
 cask "ddnet" do
-  version "19.5"
-  sha256 "e5ca740667f49a7fbe2cc91a017eaf5bcd74147a05e19d34bfd8004717931c40"
+  version "19.7"
+  sha256 "be00de1c6a6960f0c2768e54a0d1eb6e0d3528897b82efe926e689fa366b79d9"
 
   url "https://ddnet.org/downloads/DDNet-#{version}-macos.dmg"
   name "DDNet"
@@ -11,8 +11,6 @@ cask "ddnet" do
     url "https://ddnet.org/downloads/"
     regex(/href=.*?DDNet[._-]v?(\d+(?:\.\d+)+)[^"' >]*?\.dmg/i)
   end
-
-  disable! date: "2026-09-01", because: :fails_gatekeeper_check
 
   auto_updates true
   depends_on macos: ">= :big_sur"

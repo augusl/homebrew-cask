@@ -1,6 +1,6 @@
 cask "microsoft-office" do
-  version "16.103.25110922"
-  sha256 "54e2fc1ccbc0f48fb5576ea07fd6e10556832ee9d7df8615091b5e2286dd0269"
+  version "16.106.26020821"
+  sha256 "a2a94b9af07aba897850972a57bc1320da605462611714b54c34ca8d19398e03"
 
   url "https://officecdnmac.microsoft.com/pr/C1297A47-86C4-4C1F-97FA-950631F94777/MacAutoupdate/Microsoft_365_and_Office_#{version}_Installer.pkg"
   name "Microsoft Office"
@@ -23,7 +23,7 @@ cask "microsoft-office" do
     microsoft-word
     onedrive
   ]
-  depends_on macos: ">= :ventura"
+  depends_on macos: ">= :sonoma"
 
   pkg "Microsoft_365_and_Office_#{version}_Installer.pkg",
       choices: [

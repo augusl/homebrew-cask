@@ -1,20 +1,20 @@
 cask "soundanchor" do
-  version "1.4.0"
-  sha256 "69fa6c32577751b414ac86934826ed3ccb036831c10902670e509b7723bd6a0b"
+  version "1.6.1"
+  sha256 "90872e7cd66aeed0b9cf3ecab132be4f5b27743d485d5dc60903d5d0c9567444"
 
-  url "https://kopiro.s3.eu-west-1.amazonaws.com/soundanchor/SoundAnchor-#{version}.dmg",
-      verified: "kopiro.s3.eu-west-1.amazonaws.com/soundanchor/"
+  url "https://kopiro.s3.amazonaws.com/soundanchor/soundanchor-#{version}.dmg",
+      verified: "kopiro.s3.amazonaws.com/soundanchor/"
   name "SoundAnchor"
   desc "Audio device utility"
   homepage "https://apps.kopiro.me/soundanchor/"
 
   livecheck do
-    url "https://apps.kopiro.me/soundanchor/appcast.xml"
+    url "https://kopiro.s3.eu-west-1.amazonaws.com/soundanchor/appcast.xml"
     strategy :sparkle, &:short_version
   end
 
   auto_updates true
-  depends_on macos: ">= :big_sur"
+  depends_on macos: ">= :monterey"
 
   app "SoundAnchor.app"
 

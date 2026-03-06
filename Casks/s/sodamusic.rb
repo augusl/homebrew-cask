@@ -1,8 +1,8 @@
 cask "sodamusic" do
-  version "2.8.8"
-  sha256 "27b518d711d9030fb31938ba02d997a79dbc9e28eeea11b56f4cee8c343b2614"
+  version "3.1.0,303985836"
+  sha256 "432591971ea9872e5deffb401008865c28fb35d14c7c3f0cc34bc7bac7e3ae48"
 
-  url "https://lf-luna-release.qishui.com/obj/luna-release/#{version}/243782093/SodaMusic-v#{version}-official-darwin_universal.dmg",
+  url "https://lf-luna-release.qishui.com/obj/luna-release/#{version.csv.first}/#{version.csv.second}/SodaMusic-v#{version.csv.first}-official-darwin_universal.dmg",
       verified: "lf-luna-release.qishui.com/obj/luna-release/"
   name "SodaMusic"
   name "汽水音乐"
@@ -11,8 +11,12 @@ cask "sodamusic" do
 
   livecheck do
     url "https://is.snssdk.com/service/settings/v3/?caller_name=luna_home_page"
-    strategy :json do |json|
-      json.dig("data", "settings", "pc_download", "version")
+    regex(%r{/v?(\d+(?:\.\d+)*)/SodaMusic[._-]v?(\d+(?:\.\d+)+)}i)
+    strategy :json do |json, regex|
+      match = json.dig("data", "settings", "pc_download", "darwin", "universal", "url")&.match(regex)
+      next unless match
+
+      "#{match[2]},#{match[1]}"
     end
   end
 

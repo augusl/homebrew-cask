@@ -1,6 +1,6 @@
 cask "texturepacker" do
-  version "7.9.1"
-  sha256 "3c5953e8a334877ce23a484a903a05cefaddd38af8b57e0364d1f8677f14cf31"
+  version "7.12.0"
+  sha256 "bbd5a2f47c9220604faba899100365873bb042e62e114aadf6b0b96fd5cda319"
 
   url "https://www.codeandweb.com/download/texturepacker/#{version}/TexturePacker-#{version}.dmg"
   name "TexturePacker"
@@ -12,7 +12,7 @@ cask "texturepacker" do
     strategy :sparkle
   end
 
-  depends_on macos: ">= :monterey"
+  depends_on macos: ">= :ventura"
 
   app "TexturePacker.app"
 

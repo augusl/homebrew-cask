@@ -1,9 +1,9 @@
 cask "tagspaces" do
   arch arm: "arm64", intel: "x64"
 
-  version "6.7.2"
-  sha256 arm:   "84ef3ca3fc00461d481b369399479d4e0812d277ee00491f64909993b0ef6f4d",
-         intel: "d89ab6288fb953598d6ad05a0c0666bb9632b3b68d7d191bebb4211f66ec2f99"
+  version "6.9.2"
+  sha256 arm:   "3ac9a807dc2a3c58ed5032daabf9e4134ddd171fd68c5ce2a58fafecf0105a98",
+         intel: "7b05bced9e04d9771c89ebaab937264c434a1daabc83143d403e43c58575d5c4"
 
   url "https://github.com/tagspaces/tagspaces/releases/download/v#{version}/tagspaces-mac-#{arch}-#{version}.dmg",
       verified: "github.com/tagspaces/tagspaces/"
@@ -16,7 +16,7 @@ cask "tagspaces" do
     strategy :github_latest
   end
 
-  depends_on macos: ">= :big_sur"
+  depends_on macos: ">= :monterey"
 
   app "TagSpaces.app"
 

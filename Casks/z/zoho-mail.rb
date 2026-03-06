@@ -2,9 +2,9 @@ cask "zoho-mail" do
   arch arm: "arm64-"
   livecheck_arch = on_arch_conditional arm: "arm64", intel: "x64"
 
-  version "1.7.2"
-  sha256 arm:   "02f033810a7f8d5744a49055108ce3cea604e8c553d451ec4c5c893f4983c51e",
-         intel: "21ea66cbabb8257e834a514b0fbe3e969607bcee3769572023a8e0258f5e1c43"
+  version "1.8.0"
+  sha256 arm:   "2e56ece49deb63cabb198153d08a971b176932f2bd07272c7c5df0e11c1ffd36",
+         intel: "0354b438dd5911991d2b1bde39b98aa78947b53784db73ead560425d9c91c0b2"
 
   url "https://downloads.zohocdn.com/zmail-desktop/mac/zoho-mail-desktop-lite-installer-#{arch}v#{version}.dmg",
       verified: "downloads.zohocdn.com/zmail-desktop/mac/"
@@ -27,7 +27,7 @@ cask "zoho-mail" do
 
   disable! date: "2026-09-01", because: :fails_gatekeeper_check
 
-  depends_on macos: ">= :big_sur"
+  depends_on macos: ">= :monterey"
 
   app "Zoho Mail - Desktop.app"
 

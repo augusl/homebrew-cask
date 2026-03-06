@@ -1,6 +1,6 @@
 cask "livebook" do
-  version "0.17.3"
-  sha256 "f624cb28765cb061c811179d4fc974c0995771a15d30508cab117bfdce13fe32"
+  version "0.18.6"
+  sha256 "3940c9fc6591d07589562caa0908c96d21f371d8811b381180145bdfeaa6de7c"
 
   url "https://github.com/livebook-dev/livebook/releases/download/v#{version}/LivebookInstall-macos-universal.dmg",
       verified: "github.com/livebook-dev/livebook/"

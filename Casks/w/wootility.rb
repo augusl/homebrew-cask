@@ -1,9 +1,9 @@
 cask "wootility" do
   arch arm: "-arm64"
 
-  version "5.1.2"
-  sha256 arm:   "5c63dc1417241a7d129e5554ddf2a26ef70661738a431df3646266ae5b26c904",
-         intel: "96022a94cb7b84acb934f28c1b404d5c3e355414b4e262f87941216e12186f3e"
+  version "5.2.5"
+  sha256 arm:   "3567d0f43783e491404c3d0da88a61cff5b8b949ba96c974190b833092cc0b04",
+         intel: "80256026355a704053cfbed9807d53f1f76ace94eccd59c713779b455a02c22c"
 
   url "https://wootility-updates.ams3.cdn.digitaloceanspaces.com/wootility-mac/Wootility-#{version}#{arch}.dmg",
       verified: "wootility-updates.ams3.cdn.digitaloceanspaces.com/wootility-mac/"
@@ -15,6 +15,8 @@ cask "wootility" do
     url "https://wootility-updates.ams3.digitaloceanspaces.com/wootility-mac/latest-mac.yml"
     strategy :electron_builder
   end
+
+  depends_on macos: ">= :big_sur"
 
   app "Wootility.app"
 

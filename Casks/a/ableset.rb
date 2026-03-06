@@ -1,9 +1,9 @@
 cask "ableset" do
   arch arm: "-arm64"
 
-  version "2.7.5"
-  sha256 arm:   "32238e4b61fda9e05b6c1144bd2dbbba428b6f9d7840731a68477153db960583",
-         intel: "21ed710668f8dfd20627261ad98e051d7b088397d972add610ca912d4cc7d248"
+  version "3.0.5"
+  sha256 arm:   "e6a845ce19d49af42095ec71edc9e36ece213eaee5e2fbb3c90caac733d4983e",
+         intel: "b2947239985067c49becacdfbe14e8ba712386d96196e44043c3526a3c7d04a9"
 
   url "https://s3.amazonaws.com/download.ableset.app/mac#{arch}/AbleSet-#{version}#{arch}.dmg",
       verified: "s3.amazonaws.com/download.ableset.app/"
@@ -17,6 +17,7 @@ cask "ableset" do
   end
 
   auto_updates true
+  depends_on macos: ">= :monterey"
 
   app "AbleSet.app"
 

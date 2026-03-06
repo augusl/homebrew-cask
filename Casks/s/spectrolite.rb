@@ -1,11 +1,11 @@
 cask "spectrolite" do
   arch arm: "arm64", intel: "x64"
 
-  version "1.1.2"
-  sha256 arm:   "abd6320274440f21b6941028c9c143d77daecf9f768da28f514ce5fa8569395d",
-         intel: "5d86094c7097946f1f59b9d817b22bdbb637e8aaf18c2a0335dc695d198238d8"
+  version "1.3.0"
+  sha256 arm:   "1de7f2b0c655950fb2ad582ad357286f6dfd131bd8df25d875f59ea22413ef0b",
+         intel: "a83e66480d5937d908c729e0bc469ee13b74e4706c2eff9fe833d25971e8b3f1"
 
-  url "https://spectrolite.app/downloads/Spectrolite-#{version}-#{arch}.dmg"
+  url "https://spectrolite.app/downloads/Spectrolite-#{version}-#{arch}.zip"
   name "Spectrolite"
   desc "App for making risograph prints"
   homepage "https://spectrolite.app/"

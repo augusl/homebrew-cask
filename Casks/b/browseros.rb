@@ -1,17 +1,30 @@
 cask "browseros" do
   arch arm: "arm64", intel: "x64"
 
-  version "0.30.0"
-  sha256 arm:   "fd72ee98e84a1bb8fc72e271260a3bae3de9ed9b97dacde7a151657444628da1",
-         intel: "1b388bf58c6ba8ab7c2c9de8c5024ef08b400f22ffa99143248fe9a3d1981423"
+  version "0.41.0"
+  sha256 arm:   "4acf84ea041d791ea17330578811415d906dba391b1311f28273d1273b7634b1",
+         intel: "6465bff3001bba59a7878b5fc7e62b4ab0a5ed31055625b34aa7be1d0dff0b82"
 
-  url "https://github.com/browseros-ai/BrowserOS/releases/download/v#{version}/BrowserOS_v#{version}_#{arch}.dmg",
+  url "https://github.com/browseros-ai/BrowserOS/releases/download/v#{version.csv.second || version.csv.first}/BrowserOS_v#{version.csv.first}_#{arch}.dmg",
       verified: "github.com/browseros-ai/BrowserOS/"
   name "BrowserOS"
   desc "Open-source agentic browser"
   homepage "https://www.browseros.com/"
 
-  depends_on macos: ">= :big_sur"
+  livecheck do
+    url :url
+    regex(%r{/v?(\d+(?:\.\d+)+)/BrowserOS[._-]v?(\d+(?:\.\d+)*)[._-]#{arch}\.dmg}i)
+    strategy :github_latest do |json, regex|
+      json["assets"]&.map do |asset|
+        match = asset["browser_download_url"]&.match(regex)
+        next if match.blank?
+
+        (match[2] == match[1]) ? match[1] : "#{match[2]},#{match[1]}"
+      end
+    end
+  end
+
+  depends_on macos: ">= :monterey"
 
   app "BrowserOS.app"
 

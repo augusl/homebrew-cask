@@ -1,6 +1,6 @@
 cask "readest" do
-  version "0.9.93"
-  sha256 "70496357acbfe979f55ad59ce4bd9caece01c63bfffdbce58dc2d05eb863ca12"
+  version "0.9.101"
+  sha256 "a0b8e78004f24ec063c9c2a0e9a9fd7ba8d8f2f512e010b1193ac72ab2dfbc0a"
 
   url "https://github.com/readest/readest/releases/download/v#{version}/Readest_#{version}_universal.dmg",
       verified: "github.com/readest/readest/"
@@ -13,6 +13,7 @@ cask "readest" do
     strategy :github_latest
   end
 
+  auto_updates true
   depends_on macos: ">= :monterey"
 
   app "Readest.app"

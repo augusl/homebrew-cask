@@ -1,6 +1,6 @@
 cask "notepadexe" do
-  version "1.4.1438"
-  sha256 "3da90cd60edb8221b58d89dee53c23fc99dcfb4bdff160077d4b620560951c9b"
+  version "1.4.1803"
+  sha256 "769160491fe526458b303fef73b539e9ad05509593055af444ed96d4838f365f"
 
   url "https://github.com/notepadhq/notepadexe-public/releases/download/#{version}/Notepad.zip",
       verified: "github.com/notepadhq/notepadexe-public/releases/download/"
@@ -19,9 +19,11 @@ cask "notepadexe" do
   app "Notepad.exe.app"
 
   zap trash: [
+    "~/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/best.swift.notepad.sfl*",
     "~/Library/Application Support/Notepad.exe",
     "~/Library/Autosave Information/Notepad.exe",
     "~/Library/Caches/Notepad.exe",
+    "~/Library/Caches/SentryCrash/Notepad.exe",
     "~/Library/HTTPStorages/best.swift.Notepad",
     "~/Library/Notepad.exe",
     "~/Library/Preferences/best.swift.Notepad.plist",

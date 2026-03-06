@@ -1,12 +1,17 @@
 cask "astro-editor" do
-  version "1.0.0"
-  sha256 "51b4c6ecb49366b3f35cc1057a7ec95d13bee40b9da015ce985269256aacca47"
+  version "1.0.10"
+  sha256 "c178e605beec014a9dd579e5dbacead0f20c8fdd573903419484a62468ecd064"
 
   url "https://github.com/dannysmith/astro-editor/releases/download/v#{version}/Astro.Editor_#{version}_universal.dmg",
       verified: "github.com/dannysmith/astro-editor/"
   name "Astro Editor"
   desc "Markdown editor for Astro content collections"
   homepage "https://astroeditor.danny.is/"
+
+  livecheck do
+    url :url
+    strategy :github_latest
+  end
 
   app "Astro Editor.app"
 

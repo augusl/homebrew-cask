@@ -1,9 +1,9 @@
 cask "rubymine" do
   arch arm: "-aarch64"
 
-  version "2025.2.5,252.28238.3"
-  sha256 arm:   "8527cb286ea5d9cd612538cb55354dc689b7f7fe5ec0b81a8f1a4a2279e94351",
-         intel: "7dedc215b849194f8814380a4e622e117346fb52fc3f102bfa53332d33c9433b"
+  version "2025.3.3,253.31033.144"
+  sha256 arm:   "856aa5f1024e1db8bb1ff03b68bd6a47422b99eda9d24b23ad1e20e5daca0256",
+         intel: "56c6b6b3171116ca4f1ccfef15b21aa652c92eb154fc48a03d16453e0502e247"
 
   url "https://download.jetbrains.com/ruby/RubyMine-#{version.csv.first}#{arch}.dmg"
   name "RubyMine"
@@ -33,7 +33,7 @@ cask "rubymine" do
   preflight do
     File.write shimscript, <<~EOS
       #!/bin/sh
-      exec '#{appdir}/RubyMine.app/Contents/MacOS/rubymine' "$@"
+      open -na "RubyMine.app" --args "$@"
     EOS
   end
 

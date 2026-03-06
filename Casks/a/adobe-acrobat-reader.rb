@@ -1,6 +1,6 @@
 cask "adobe-acrobat-reader" do
-  version "25.001.20937"
-  sha256 "4438dc2f22816e3e4d93f29ff9d733f7f0a8a8705f3cc11270f73a8efa272793"
+  version "25.001.21223"
+  sha256 "1ece44d89a4d771407f2eb44cb0c7ac04a1c78f20be857ffaf3e1ac76add13bd"
 
   url "https://ardownload2.adobe.com/pub/adobe/reader/mac/AcrobatDC/#{version.no_dots}/AcroRdrDC_#{version.no_dots}_MUI.dmg"
   name "Adobe Acrobat Reader"
@@ -15,28 +15,30 @@ cask "adobe-acrobat-reader" do
   end
 
   auto_updates true
+  depends_on macos: ">= :monterey"
 
   pkg "AcroRdrDC_#{version.no_dots}_MUI.pkg"
 
-  uninstall launchctl: [
+  uninstall launchctl:  [
               "com.adobe.ARMDC.Communicator",
               "com.adobe.ARMDC.SMJobBlessHelper",
               "com.adobe.ARMDCHelper.cc24aef4a1b90ed56a725c38014c95072f92651fb65e1bf9c8e43c37a23d420d",
             ],
-            quit:      [
+            quit:       [
               "com.adobe.AdobeRdrCEF",
               "com.adobe.AdobeRdrCEFHelper",
               "com.adobe.Reader",
             ],
-            pkgutil:   [
+            pkgutil:    [
               "com.adobe.acrobat.DC.reader.*",
               "com.adobe.armdc.app.pkg",
               "com.adobe.RdrServicesUpdater",
             ],
-            delete:    [
+            delete:     [
               "/Applications/Adobe Acrobat Reader.app",
               "/Library/Preferences/com.adobe.reader.DC.WebResource.plist",
-            ]
+            ],
+            on_upgrade: :quit
 
   zap trash: [
     "~/Library/Application Support/Adobe/Acrobat",

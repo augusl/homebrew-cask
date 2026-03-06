@@ -1,6 +1,6 @@
 cask "djv" do
-  version "3.2.1"
-  sha256 "c3563bffe67aee6bf855b11bcf8af4d68bbe6682f746f4c7326ffdd9f9387c4f"
+  version "3.3.4"
+  sha256 "3ffc220a1b7c5eb74300136676f5fcfe182b4e4ebb61a886095a5f8e5fd50fba"
 
   url "https://github.com/grizzlypeak3d/DJV/releases/download/#{version}/DJV-#{version}-macOS-arm64.dmg",
       verified: "github.com/grizzlypeak3d/DJV/"

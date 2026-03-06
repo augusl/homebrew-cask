@@ -1,9 +1,10 @@
 cask "bilibili" do
-  version "1.17.3"
+  version "1.17.5"
   sha256 :no_check
 
   url "https://dl.hdslb.com/mobile/fixed/pc_electron_mac/bili_mac.dmg",
-      verified: "dl.hdslb.com/"
+      verified:   "dl.hdslb.com/",
+      user_agent: :fake
   name "Bilibili"
   name "哔哩哔哩官方客户端"
   desc "Official bilibili video streaming and sharing platform"

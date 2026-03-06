@@ -1,6 +1,6 @@
 cask "autogram" do
-  version "2.6.1"
-  sha256 "6ab4c39c2be1f9e6896e8385f4d02a8eeb1d729f125ec1bb389133183f813643"
+  version "2.7.2"
+  sha256 "e31e1cef6adbe42d3625167599c36beaff27576ebe4fe4db814550212aec2efe"
 
   url "https://github.com/slovensko-digital/autogram/releases/download/v#{version}/Autogram-#{version}-MacOs.pkg",
       verified: "github.com/slovensko-digital/autogram/"
@@ -15,7 +15,7 @@ cask "autogram" do
 
   pkg "Autogram-#{version}-MacOs.pkg"
 
-  # Following 'preflight' is needed to avoid interactive parts of the instalation process. More details in https://github.com/Homebrew/homebrew-cask/pull/201161#discussion_r1950819869
+  # Following 'preflight' is needed to avoid interactive parts of the installation process. More details in https://github.com/Homebrew/homebrew-cask/pull/201161#discussion_r1950819869
   preflight do
     FileUtils.mkdir_p "#{Dir.home}/Library/Application Support/Autogram/tls/"
     FileUtils.touch "#{Dir.home}/Library/Application Support/Autogram/tls/skip"

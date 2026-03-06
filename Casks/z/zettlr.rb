@@ -1,16 +1,17 @@
 cask "zettlr" do
   arch arm: "arm64", intel: "x64"
 
-  version "3.6.0"
-  sha256 arm:   "ace941ab6763d92c1db3af28b94b552db7a59e693c4adb176616cccf3c6df333",
-         intel: "a48edaa8947fb1f662e68f077012aa6d85f57af03a09914f16720ac5e0598077"
+  version "4.2.0"
+  sha256 arm:   "4de556a27e522d0b049500fc022d3d4c883b031b233933d17478b09044eaf397",
+         intel: "1a4643c657b8e6856705ce6c4bfce477c1742c3b7ad609c2d77d4dbe99d34665"
 
-  url "https://github.com/Zettlr/Zettlr/releases/download/v#{version}/Zettlr-#{version}-#{arch}.dmg"
+  url "https://github.com/Zettlr/Zettlr/releases/download/v#{version}/Zettlr-#{version}-#{arch}.dmg",
+      verified: "github.com/Zettlr/Zettlr/"
   name "Zettlr"
   desc "Open-source markdown editor"
-  homepage "https://github.com/Zettlr/Zettlr/"
+  homepage "https://www.zettlr.com/"
 
-  depends_on macos: ">= :big_sur"
+  depends_on macos: ">= :monterey"
 
   app "Zettlr.app"
 

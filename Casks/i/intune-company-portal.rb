@@ -1,6 +1,6 @@
 cask "intune-company-portal" do
-  version "5.2510.0"
-  sha256 "63a96edb768dd27168c3921785a0f5718aa879259a38610743b31f083678e7c2"
+  version "5.2601.0"
+  sha256 "d71eb39519aa0fd5a5f49d8c29be5f15fa54f63c516ee0f18af958204b74abb8"
 
   url "https://officecdn.microsoft.com/pr/C1297A47-86C4-4C1F-97FA-950631F94777/MacAutoupdate/CompanyPortal_#{version}-Upgrade.pkg"
   name "Company Portal"
@@ -20,6 +20,7 @@ cask "intune-company-portal" do
   end
 
   auto_updates true
+  depends_on macos: ">= :big_sur"
 
   pkg "CompanyPortal_#{version}-Upgrade.pkg",
       choices: [
@@ -30,7 +31,11 @@ cask "intune-company-portal" do
         },
       ]
 
-  uninstall launchctl: "com.microsoft.update.agent",
+  uninstall launchctl: [
+              "*.com.microsoft.entrabroker.EntraIdentityBrokerXPC.Mach",
+              "com.microsoft.entraidentitybrokerxpc",
+              "com.microsoft.update.agent",
+            ],
             quit:      "com.microsoft.autoupdate2",
             pkgutil:   [
               "com.microsoft.CompanyPortal",

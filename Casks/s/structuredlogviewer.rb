@@ -1,9 +1,9 @@
 cask "structuredlogviewer" do
   arch arm: "arm64", intel: "x64"
 
-  version "2.3.100"
-  sha256 arm:   "db49e5e6142f8d0a683fd6abef085eddaf1f28ef17c9c514e400b162b358065f",
-         intel: "228f34f53b8ea5b524b2862407d0691fb71beb1a82fa54d544e47eb437d0081a"
+  version "2.3.143"
+  sha256 arm:   "53d824eb5b6df5af7eda93e0774f57b117aeaf686d2d519a852a530c0720109f",
+         intel: "2ebd7cbb3bafa08626682404f2508c2a5492e77ffaa49ed73ff10b786a46e0d5"
 
   on_arm do
     depends_on macos: ">= :big_sur"

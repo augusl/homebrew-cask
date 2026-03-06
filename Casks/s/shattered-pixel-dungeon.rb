@@ -1,6 +1,6 @@
 cask "shattered-pixel-dungeon" do
-  version "3.2.5"
-  sha256 "8d138773092388ea190f1da22a0bd8d90153a24ea8fb5b5d116af21381e02758"
+  version "3.3.7"
+  sha256 "a6fd6bea9f71e8979bddd68df3afa739495179097516bdc2a441d358331f81b2"
 
   url "https://github.com/00-Evan/shattered-pixel-dungeon/releases/download/v#{version}/ShatteredPD-v#{version}-macOS.zip",
       verified: "github.com/00-Evan/shattered-pixel-dungeon/"
@@ -12,8 +12,6 @@ cask "shattered-pixel-dungeon" do
     url :url
     strategy :github_latest
   end
-
-  disable! date: "2026-09-01", because: :fails_gatekeeper_check
 
   auto_updates true
 

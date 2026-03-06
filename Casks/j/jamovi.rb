@@ -1,17 +1,19 @@
 cask "jamovi" do
   arch arm: "arm64", intel: "x64"
 
-  version "2.7.12.0"
-  sha256 arm:   "2dc3101052113ee85dd464df4243f9bc263c0e6066f0e454f2326a3e7bbf9060",
-         intel: "ee9edd5977a4e78668415e7cef71241c4028f40e62fd3b16247cdfba82de5434"
+  version "2.7.22.0"
+  sha256 arm:   "7c410dd7df256c79e052cf3ca8e08fb2268c938e21b8cb0e7457970e85d13a74",
+         intel: "131db68ac163960fb598eec9b348ad6663b37e4dfc4e985cd06dae762b3f6122"
 
   url "https://www.jamovi.org/downloads/jamovi-#{version}-macos-#{arch}.dmg"
   name "jamovi"
   desc "Statistical software"
   homepage "https://www.jamovi.org/"
 
+  # The download page will redirect to the homepage unless a `referer` is used.
   livecheck do
-    url "https://www.jamovi.org/download.html"
+    url "https://www.jamovi.org/download.html",
+        referer: "https://www.jamovi.org"
     regex(/href=.*?jamovi[._-]v?(\d+(?:\.\d+)+)[._-]macos[._-]#{arch}\.dmg/i)
   end
 

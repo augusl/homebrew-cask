@@ -1,6 +1,6 @@
 cask "steelseries-gg" do
-  version "99.0.0"
-  sha256 "f56052de75e6b1470d840268bc57f2ddcc8a0094df4d11a9d4facf790eaf03b9"
+  version "105.0.0"
+  sha256 "c9d0feca85b0e18deb042cae6382b809a93fbe4324781cae62dc40a6b33a1494"
 
   url "https://engine.steelseriescdn.com/SteelSeriesGG#{version}.pkg",
       verified: "engine.steelseriescdn.com/"
@@ -14,7 +14,6 @@ cask "steelseries-gg" do
   end
 
   auto_updates true
-  conflicts_with cask: "steelseries-engine"
 
   pkg "SteelSeriesGG#{version}.pkg"
 

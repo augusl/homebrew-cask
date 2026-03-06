@@ -1,9 +1,9 @@
 cask "1password" do
   arch arm: "aarch64", intel: "x86_64"
 
-  version "8.11.20"
-  sha256 arm:   "f15a0234ae89c0de9ae4451664a4060c063a98837c6dce330629c4932edbd1f3",
-         intel: "4197319a973450d6c29258e468fe76b66dde47e6c8a4f38018127b43d9599670"
+  version "8.12.5"
+  sha256 arm:   "1b820e5717da132ce17bbe1efc86cdb764d23c080d705d70ae2fcf6e2e17afb2",
+         intel: "8c068248fa66dd3eee0bacb4039045f36d50d39d1ffcfd3491696f61ad079f9b"
 
   url "https://downloads.1password.com/mac/1Password-#{version}-#{arch}.zip"
   name "1Password"

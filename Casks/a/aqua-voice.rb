@@ -1,9 +1,9 @@
 cask "aqua-voice" do
   arch arm: "arm64", intel: "x64"
 
-  version "0.10.9"
-  sha256 arm:   "297db51f81a52f9af786c67d2b3169a65176c5fbc1127043e493adf81eee7cf5",
-         intel: "c86160114b38c2b6a76ba43df9df14df6b17032a1caa1d27b5144f5281bec8c9"
+  version "0.11.9"
+  sha256 arm:   "d1f8a3f0febcbbe49081dfde016a841faca8fb724b4706ba6d616fb4a230969b",
+         intel: "59f65c28bf6843ea10d3105285ca331b2255c72c3d33901d2d8586521c198c2f"
 
   url "https://d1a1dx1sgvjqrz.cloudfront.net/aqua-voice-updates/darwin/#{arch}/Aqua+Voice-#{version}-#{arch}.dmg",
       verified: "d1a1dx1sgvjqrz.cloudfront.net/"
@@ -19,6 +19,7 @@ cask "aqua-voice" do
   end
 
   auto_updates true
+  depends_on macos: ">= :big_sur"
 
   app "Aqua Voice.app"
 

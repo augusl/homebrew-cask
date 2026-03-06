@@ -1,9 +1,9 @@
 cask "vscodium@insiders" do
   arch arm: "arm64", intel: "x64"
 
-  version "1.106.07591-insider"
-  sha256 arm:   "fc3d3749110a3f7932f47e143465a68f87db9dfc4ca19d08869a8345641fb331",
-         intel: "55fafff3a339788727e6ade0d8799ca45c36cf8274f3bd06e482463441e3e08f"
+  version "1.110.01537-insider"
+  sha256 arm:   "14fe41d6b67d905de6434aeb3df13683a68155df58301f8c976ec7413cc6b3e3",
+         intel: "e6a3a60c47610aade54dd226898e99a8b5edc48fc4dc01d9b078dc6a83488ca8"
 
   url "https://github.com/VSCodium/vscodium-insiders/releases/download/#{version}/VSCodium-darwin-#{arch}-#{version}.zip",
       verified: "github.com/VSCodium/vscodium-insiders/"
@@ -20,7 +20,7 @@ cask "vscodium@insiders" do
   end
 
   auto_updates true
-  depends_on macos: ">= :big_sur"
+  depends_on macos: ">= :monterey"
 
   app "VSCodium - Insiders.app"
   binary "#{appdir}/VSCodium - Insiders.app/Contents/Resources/app/bin/codium-insiders"

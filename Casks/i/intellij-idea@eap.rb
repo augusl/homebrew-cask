@@ -1,9 +1,9 @@
 cask "intellij-idea@eap" do
   arch arm: "-aarch64"
 
-  version "2025.3,253.28294.169"
-  sha256 arm:   "d1ffaa48d91b70de4f4cfd98f430e11bbd64944b8399febc962cf0227a4463db",
-         intel: "ebb3f6885a546c91e8ac5aa204327c4ad31120beff077b8170c07c8455b00eb3"
+  version "2026.1,261.22158.46"
+  sha256 arm:   "f6b74b538706e9ea8f6a27b11b5944a962dda3ef36f53e09b8a4596f6580cbc2",
+         intel: "d3c1b353f2d7f033caa14f492c5f73cfefbc6bc75df09d7e18da95370bed41ff"
 
   url "https://download.jetbrains.com/idea/ideaIU-#{version.csv.second}#{arch}.dmg"
   name "IntelliJ IDEA EAP"
@@ -11,7 +11,7 @@ cask "intellij-idea@eap" do
   homepage "https://www.jetbrains.com/idea/nextversion"
 
   livecheck do
-    url "https://data.services.jetbrains.com/products/releases?code=IIU&release.type=eap"
+    url "https://data.services.jetbrains.com/products/releases?code=IIU&latest=true&type=eap"
     strategy :json do |json|
       json["IIU"]&.map do |release|
         version = release["version"]

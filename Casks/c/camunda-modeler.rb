@@ -1,9 +1,9 @@
 cask "camunda-modeler" do
   arch arm: "arm64", intel: "x64"
 
-  version "5.41.0"
-  sha256 arm:   "4c03681e643ee7094f0f07e3786e44d2209bebad3664cb56cbd06cc29257c457",
-         intel: "09f87da20ec30aef79708e3d6f8a6336ec2671ce89b68425c0dae82075bffb6f"
+  version "5.44.0"
+  sha256 arm:   "d37c7adfb9c3101cbb3a790f7c5f5eca877aeef7e0a16fcd0fa26076f470ad54",
+         intel: "04615f8a431f70fb2ff8eaf78ac6d37e72a6147d758b4c83ef6b535656ffddb0"
 
   url "https://downloads.camunda.cloud/release/camunda-modeler/#{version}/camunda-modeler-#{version}-mac-#{arch}.zip",
       verified: "downloads.camunda.cloud/release/camunda-modeler/"
@@ -16,7 +16,7 @@ cask "camunda-modeler" do
     regex(%r{href=.*?/camunda[._-]modeler[._-]v?(\d+(?:\.\d+)+)[._-]mac[._-]#{arch}\.zip}i)
   end
 
-  depends_on macos: ">= :big_sur"
+  depends_on macos: ">= :monterey"
 
   app "Camunda Modeler.app"
 

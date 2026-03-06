@@ -1,6 +1,6 @@
 cask "whatsapp" do
-  version "2.25.35.17"
-  sha256 "b9050844b5ad10fbb32a165023f2d002cf626ab287c44dfc51165890fcd9001b"
+  version "2.26.9.21"
+  sha256 "16588f5ea51c5829a4ce1b6d8a6e392ad46d460883dc051068fbd69e251e3161"
 
   url "https://web.whatsapp.com/desktop/mac_native/release/?version=#{version}&extension=zip&configuration=Release&branch=master&is_buck=true"
   name "WhatsApp"
@@ -16,10 +16,7 @@ cask "whatsapp" do
   end
 
   auto_updates true
-  conflicts_with cask: [
-    "whatsapp@beta",
-    "whatsapp@legacy",
-  ]
+  conflicts_with cask: "whatsapp@beta"
   depends_on macos: ">= :monterey"
 
   app "WhatsApp.app"

@@ -2,8 +2,8 @@ cask "monarch" do
   arch arm: "aarch64", intel: "x64"
 
   on_arm do
-    version "0.8.31"
-    sha256 "20cb728db3dcc49478cf555be9de44c0ee12cbe93624faaf31fbf4389450152d"
+    version "0.9.3"
+    sha256 "eb719a222fb6528e52817a88a237c56290c44c59a680989aa8533edf478de42f"
 
     url "https://storage.googleapis.com/monarchlauncher/v08/#{arch}/monarch-#{version}.dmg",
         verified: "storage.googleapis.com/monarchlauncher/"
@@ -23,8 +23,7 @@ cask "monarch" do
         verified: "storage.googleapis.com/monarchlauncher/"
 
     livecheck do
-      url "https://storage.googleapis.com/monarchlauncher/#{arch}/latest-mac.yml"
-      strategy :electron_builder
+      skip "Legacy version"
     end
   end
 
@@ -32,6 +31,7 @@ cask "monarch" do
   desc "Spotlight Search"
   homepage "https://monarchlauncher.com/"
 
+  auto_updates true
   depends_on macos: ">= :monterey"
 
   app "Monarch.app"

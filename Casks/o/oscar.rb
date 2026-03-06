@@ -1,14 +1,18 @@
 cask "oscar" do
-  version "1.6.1"
-  sha256 "eca3cdf056519480b9079c513e1ef99b7e27ef0a6ad139fbaca05d8c8cb68ffa"
+  version "1.7.1"
+  sha256 "fa6171ddbef287490469abcdd9793e4303fb116af7c125c487ec571ff787db7d"
 
-  url "https://www.apneaboard.com/OSCAR/#{version}/OSCAR-#{version}.dmg",
-      verified: "apneaboard.com/OSCAR/"
+  url "https://www.sleepfiles.com/OSCAR/#{version}/OSCAR-#{version}-Qt5.dmg"
   name "OSCAR"
   desc "CPAP Analysis Reporter"
   homepage "https://www.sleepfiles.com/OSCAR/"
 
-  disable! date: "2025-11-15", because: :unreachable
+  livecheck do
+    url :homepage
+    regex(%r{href=.*?/OSCAR[._-]v?(\d+(?:\.\d+)+)(?:[._-]Qt5)?\.dmg}i)
+  end
+
+  disable! date: "2026-09-01", because: :fails_gatekeeper_check
 
   app "OSCAR.app"
 

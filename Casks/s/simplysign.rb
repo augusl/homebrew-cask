@@ -1,6 +1,6 @@
 cask "simplysign" do
-  version "2.10.19-9.3.3.0,2.10.19-9.3.3"
-  sha256 "1c6ccc48ecf5e57b0cd85771ac5209b8d91351268d5302accce034a6b1039cc8"
+  version "2.10.19-9.4.1.0,2.10.19-9.4.1"
+  sha256 "285bedd4dfca886629b4fe6c8017e23099c0c49c80cfa4e747c909ee19afb2c8"
 
   url "https://files.certum.eu/software/SimplySignDesktop/OSX/#{version.csv.first}/SimplySignDesktop-#{version.csv.second || version.csv.first}_prod.dmg"
   name "SimplySign Desktop"

@@ -1,6 +1,6 @@
 cask "jyutping" do
-  version "0.66.0"
-  sha256 "fce22965d03eb812b58332f5ec232df5c895b753b456e1bad258bbc67b8c1f46"
+  version "0.70.0"
+  sha256 "b19c738fe271b0ca943e5f4972aa153255b452b4510dcbe97723966bbe961a5a"
 
   url "https://github.com/yuetyam/jyutping/releases/download/#{version}/Jyutping-v#{version}-Mac.pkg",
       verified: "github.com/yuetyam/jyutping/"
@@ -14,7 +14,7 @@ cask "jyutping" do
   end
 
   auto_updates true
-  depends_on macos: ">= :monterey"
+  depends_on macos: ">= :ventura"
 
   pkg "Jyutping-v#{version}-Mac.pkg"
 

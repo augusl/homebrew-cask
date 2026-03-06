@@ -1,12 +1,17 @@
 cask "osaurus" do
-  version "0.5.2"
-  sha256 "bcba76df014436ba63ed4906ef0de6eee663a624fb79f9b697cfcba39964fe00"
+  version "0.13.9"
+  sha256 "0a481df8da9bff99eccea7d35ebf4a333c268b46acf894de9cd4b9332477acd7"
 
-  url "https://github.com/dinoki-ai/osaurus/releases/download/#{version}/Osaurus-#{version}.dmg",
-      verified: "github.com/dinoki-ai/osaurus/"
+  url "https://github.com/osaurus-ai/osaurus/releases/download/#{version}/Osaurus-#{version}.dmg",
+      verified: "github.com/osaurus-ai/osaurus/"
   name "Osaurus"
   desc "LLM server built on MLX"
   homepage "https://osaurus.ai/"
+
+  livecheck do
+    url :url
+    strategy :github_latest
+  end
 
   depends_on macos: ">= :sequoia"
   depends_on arch: :arm64

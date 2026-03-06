@@ -1,6 +1,6 @@
 cask "base" do
-  version "3.1.0"
-  sha256 "f110a96e211449f0ef217472e7d444ca32888083e8bb0bca5ecf91f804e581bf"
+  version "3.2.1"
+  sha256 "7442bd7bfa3a6fd6bffda98e46a4c5dce555709b82dc6e5bd9efa9714732faf0"
 
   url "https://files.menial.co.uk/base/Base-#{version}.zip"
   name "Menial Base"

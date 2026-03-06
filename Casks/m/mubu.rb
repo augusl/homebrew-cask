@@ -1,12 +1,11 @@
 cask "mubu" do
   arch arm: "-arm64"
 
-  version "5.2.0"
-  sha256 arm:   "fcbae55e14ff3b1aacae11814229b78095d3975e6b923506df6b33629af26166",
-         intel: "11ae5aed39c2f51bff44e1d57a8352240d01a39ea36f0dc51bbb51914ee4eef4"
+  version "5.4.1"
+  sha256 arm:   "e55cfd20e4bcfc953a6613b3a0dc4d3329e6adc686fe5f18db8ef4674330f0c3",
+         intel: "f26a8e7a6242061a0fdfdab8b75699b672053b8fd7b324bf76d95043573c177c"
 
-  url "https://mubu-assets.tos-cn-shanghai.volces.com/client/Mubu-#{version}#{arch}.dmg",
-      verified: "mubu-assets.tos-cn-shanghai.volces.com/client/"
+  url "https://assets.mubu.com/client/#{version}/Mubu-#{version}#{arch}.dmg"
   name "Mubu"
   desc "Outline note taking and management app"
   homepage "https://mubu.com/"

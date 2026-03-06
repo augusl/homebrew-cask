@@ -1,6 +1,6 @@
 cask "devknife" do
-  version "1.5.1"
-  sha256 "0e893a9febf0dff7622d8a4a88c3db56e2e761a971821e1556208604e9a38281"
+  version "1.10.1"
+  sha256 "a310f1d96422ca484716a77ed54e7b6ae74d9edd5006f326bc66fdc906ebf6e7"
 
   url "https://files.solotuna.com/devknife/DevKnife-#{version}.dmg",
       verified: "files.solotuna.com/devknife/"
@@ -9,7 +9,7 @@ cask "devknife" do
   homepage "https://devknife.app/"
 
   livecheck do
-    url "http://files.solotuna.com/devknife/appcast.xml"
+    url "https://files.solotuna.com/devknife/appcast.xml"
     strategy :sparkle, &:short_version
   end
 

@@ -1,6 +1,6 @@
 cask "microsoft-office-businesspro" do
-  version "16.103.25110922"
-  sha256 "8b7343aa4d6f1ca4e7db7ef6467170bf5f613238cd6fe2bd68e284f4160131a1"
+  version "16.106.26020821"
+  sha256 "4969a54bf673647b2796d323003126a3c4af4b7fdf16c0173690416f45191319"
 
   url "https://officecdnmac.microsoft.com/pr/C1297A47-86C4-4C1F-97FA-950631F94777/MacAutoupdate/Microsoft_365_and_Office_#{version}_BusinessPro_Installer.pkg"
   name "Microsoft Office BusinessPro"
@@ -25,7 +25,7 @@ cask "microsoft-office-businesspro" do
     microsoft-word
     onedrive
   ]
-  depends_on macos: ">= :monterey"
+  depends_on macos: ">= :sonoma"
 
   pkg "Microsoft_365_and_Office_#{version}_BusinessPro_Installer.pkg",
       choices: [
@@ -47,6 +47,7 @@ cask "microsoft-office-businesspro" do
             ],
             quit:      "com.microsoft.autoupdate2",
             pkgutil:   [
+              "com.microsoft.m365copilot.shim",
               "com.microsoft.MSTeamsAudioDevice",
               "com.microsoft.OneDrive",
               "com.microsoft.package.DFonts",
@@ -64,6 +65,7 @@ cask "microsoft-office-businesspro" do
               "com.microsoft.wdav.shim",
             ],
             delete:    [
+              "/Applications/Microsoft 365 Copilot Shim.app",
               "/Applications/Microsoft Defender Shim.app",
               "/Applications/Microsoft Defender.app",
               "/Applications/Microsoft Excel.app",

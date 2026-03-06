@@ -2,11 +2,11 @@ cask "antigravity" do
   arch arm: "arm", intel: "x64"
   livecheck_arch = on_arch_conditional arm: "-arm64"
 
-  version "1.11.5,5234145629700096"
-  sha256 arm:   "800890265dca8b74d7d28af99fae7fc5762f4d529e8eeb451a76c25e09dff488",
-         intel: "393336a2177fc3795adb9450f311ce5d453b5df0e0cfa23e35e419f46e3ebc2c"
+  version "1.19.6,6514342219874304"
+  sha256 arm:   "b94f724d56bcf980df4222bee99627c007db5729305e09818bd2b3883a02713d",
+         intel: "070b3842c919b3b6d595000b015361f28eb1f854e99f9ae0ba1ceff31383fb4a"
 
-  url "https://edgedl.me.gvt1.com/edgedl/release2/j0qc3/antigravity/stable/#{version.csv.first}-#{version.csv.second}/darwin-#{arch}/Antigravity.zip",
+  url "https://edgedl.me.gvt1.com/edgedl/release2/j0qc3/antigravity/stable/#{version.csv.first}-#{version.csv.second}/darwin-#{arch}/Antigravity.dmg",
       verified: "edgedl.me.gvt1.com/edgedl/release2/j0qc3/antigravity/"
   name "Google Antigravity"
   desc "AI Coding Agent IDE"
@@ -24,10 +24,19 @@ cask "antigravity" do
   end
 
   auto_updates true
-  depends_on macos: ">= :big_sur"
+  depends_on macos: ">= :monterey"
 
   app "Antigravity.app"
-  binary "#{appdir}/Antigravity.app/Contents/Resources/app/bin/antigravity", target: "agy"
+  # shim script (https://github.com/Homebrew/homebrew-cask/issues/18809)
+  agy_shimscript = "#{staged_path}/agy.wrapper.sh"
+  binary agy_shimscript, target: "agy"
+
+  preflight do
+    File.write agy_shimscript, <<~EOS
+      #!/bin/sh
+      exec '#{appdir}/Antigravity.app/Contents/Resources/app/bin/antigravity' "$@"
+    EOS
+  end
 
   zap trash: [
     "~/.antigravity/",

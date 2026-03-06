@@ -1,6 +1,6 @@
 cask "kaleidoscope" do
-  version "6.3.1,8835"
-  sha256 "695f4372403507b1973a7759a64d85a8dd28950e675dca92507882677b6fa3d1"
+  version "6.6,9910"
+  sha256 "39f0b226eab4a2fb1e0489805cab3939667e638eef5f2db644185cee32ab5bb2"
 
   url "https://updates.kaleidoscope.app/v#{version.major}/prod/Kaleidoscope-#{version.csv.first}-#{version.csv.second}.app.zip"
   name "Kaleidoscope"
@@ -16,7 +16,6 @@ cask "kaleidoscope" do
   conflicts_with cask: %w[
     kaleidoscope@2
     kaleidoscope@3
-    ksdiff
   ]
   depends_on macos: ">= :ventura"
 

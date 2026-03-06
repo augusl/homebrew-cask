@@ -1,8 +1,8 @@
 cask "qidistudio" do
-  version "2.03.00.70"
-  sha256 "63be0fa81c7bc71f6ae6644628e89668eb373084502cf325f8cd6a4be7f31154"
+  version "2.04.01.11"
+  sha256 "9c4899a714163d052199530f3a1d5c9badcc164b977894fdb4486d6e285660ab"
 
-  url "https://github.com/QIDITECH/QIDIStudio/releases/download/v#{version}/QIDIStudio_#{version}_MacOS_universal.dmg",
+  url "https://github.com/QIDITECH/QIDIStudio/releases/download/v#{version}/QIDIStudio_v0#{version}_MacOS_universal.dmg",
       verified: "github.com/QIDITECH/QIDIStudio/"
   name "QIDI Studio"
   desc "Slicer software for QIDI 3D printers"

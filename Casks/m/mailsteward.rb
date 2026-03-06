@@ -1,6 +1,6 @@
 cask "mailsteward" do
-  version "18.1.1"
-  sha256 "c47cc20de85d9ed9486ce9aec2d989e3a8bd0dc56b3ec4a51b0ece94141dc819"
+  version "18.2.1"
+  sha256 "0d5cc8fdfa1e6a88ee39599faa59081538ca49123ec8d75c258ff226b729231c"
 
   url "https://s3.amazonaws.com/mailsteward/images/MailSteward_#{version}.zip",
       verified: "s3.amazonaws.com/mailsteward/"

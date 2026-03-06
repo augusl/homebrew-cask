@@ -1,9 +1,9 @@
 cask "ultrastardeluxe" do
   arch arm: "ARM", intel: "x86"
 
-  version "2025.10.1"
-  sha256 arm:   "e82c61b294c67acb6fab5874ca94c274f83e68d088722830eb7c8cf20e889598",
-         intel: "724a467466ccc21778ae16070783a05751cfa15d80d96bb8e3ac27f99f355933"
+  version "2026.2.0"
+  sha256 arm:   "754b9ce097b0a13c069fef1c70662a39454d83533ed8ba211add645e72b2ff50",
+         intel: "337eb585079c43b9fc644ca75bdb92241e4a7347428b0c73d1d6554837bdc2cd"
 
   url "https://github.com/UltraStar-Deluxe/USDX/releases/download/v#{version}/UltraStarDeluxe-mac-#{arch}-#{version}.dmg",
       verified: "github.com/UltraStar-Deluxe/USDX/"
@@ -12,6 +12,8 @@ cask "ultrastardeluxe" do
   homepage "https://usdx.eu/"
 
   disable! date: "2026-09-01", because: :fails_gatekeeper_check
+
+  depends_on macos: ">= :big_sur"
 
   app "UltraStarDeluxe.app"
 

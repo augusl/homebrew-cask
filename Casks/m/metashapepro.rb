@@ -1,6 +1,6 @@
 cask "metashapepro" do
-  version "2.2.2"
-  sha256 "cc215a944e93aa07b0e3ce7015d97dfe33aaafe84630ae368ca2ab363fba6ff9"
+  version "2.3.0"
+  sha256 "9c3476dc8a0996fb594cb6be749bee2eb15d920b6ee421dab8484e81047e2acc"
 
   url "https://download.agisoft.com/metashape-pro_#{version.dots_to_underscores}.dmg"
   name "Agisoft Metashape Professional Edition"
@@ -11,6 +11,8 @@ cask "metashapepro" do
     url "https://www.agisoft.com/downloads/installer/"
     regex(/Metashape\s*(\d+(?:\.\d+)+)/i)
   end
+
+  depends_on macos: ">= :big_sur"
 
   app "MetashapePro.app"
 

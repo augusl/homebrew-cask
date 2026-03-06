@@ -1,9 +1,9 @@
 cask "tropy" do
   arch arm: "-arm64"
 
-  version "1.17.1"
-  sha256 arm:   "a618c3f6d684ba26787a9599ceb2864b85bc962d80b26082b85ed6f4e201b0ca",
-         intel: "0216b06f4f7afedacad4675f268524195a3dbf0cec8dca9cbf392bda54ddbb66"
+  version "1.17.3"
+  sha256 arm:   "1073ee59e09635aa879eb59f981cf9de949b8c3207124869cde816bd0cfe532c",
+         intel: "21895d3d96f1037078852151b8c94a9b4b69a64ecdd966b54313d28f9b0e8286"
 
   url "https://github.com/tropy/tropy/releases/download/v#{version}/tropy-#{version}#{arch}.dmg",
       verified: "github.com/tropy/tropy/"

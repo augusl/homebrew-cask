@@ -1,6 +1,6 @@
 cask "ddpm" do
-  version "2.1.1.0007"
-  sha256 "ad3a2d4d47266411b78fca6f206a0e74b861974dbeb7efd5fe75bab419e9da69"
+  version "2.2.0.0024"
+  sha256 "5413aa27d21bad3c73dee2e885a64b076efafc6ceb562c1477071834e76214df"
 
   url "https://clientperipherals.dell.com/DDPM/Mac/Application/DDPMv#{version}.zip"
   name "DDPM"

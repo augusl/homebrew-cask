@@ -1,9 +1,9 @@
 cask "intellij-idea" do
   arch arm: "-aarch64"
 
-  version "2025.2.5,252.28238.7"
-  sha256 arm:   "6ec8cf520556c75e91a3cae1c54f464dee3609c4d7efef3bb307b129c7d9cb63",
-         intel: "c0d6731d60bdcdaaea5c0474c296e39cc336f424da872c6ed022e8f139d779ee"
+  version "2025.3.3,253.31033.145"
+  sha256 arm:   "002e623edf51d02228faa741bc25fd2ef7e7485513b0854c846f4cc5d6c66e50",
+         intel: "3076cd664600eb4512e6023e1a0766ed67edaf0bad9db36a4b4e404ddeb9783b"
 
   url "https://download.jetbrains.com/idea/ideaIU-#{version.csv.first}#{arch}.dmg"
   name "IntelliJ IDEA Ultimate"
@@ -34,7 +34,7 @@ cask "intellij-idea" do
   preflight do
     File.write shimscript, <<~EOS
       #!/bin/sh
-      exec '#{appdir}/IntelliJ IDEA.app/Contents/MacOS/idea' "$@"
+      open -na "IntelliJ IDEA.app" --args "$@"
     EOS
   end
 

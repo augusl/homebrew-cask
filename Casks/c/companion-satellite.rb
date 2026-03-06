@@ -2,9 +2,9 @@ cask "companion-satellite" do
   arch arm: "arm64", intel: "x64"
   livecheck_arch = on_arch_conditional arm: "arm", intel: "intel"
 
-  version "2.5.0,551,d9dae48"
-  sha256 arm:   "d118f2ef7c5c65fd3f5de3863d0aaa4eebbe1c29dee1631c7905e8e01142136a",
-         intel: "5e79a37f91a3b9d34a831515ab1a5c70962a81c622abcf6a4381c8b2cd325e7e"
+  version "2.8.0,604,97e9a87"
+  sha256 arm:   "2ca9c3e1747d5c9685e6dc3998c338d48971322697b795992743726a1b76f0d5",
+         intel: "8894d6024836d21ab2ed6a910085f07671c4972976c9efb1efe1171002f9e590"
 
   url "https://s4.bitfocus.io/builds/companion-satellite/companion-satellite-#{arch}-#{version.csv.second}-#{version.csv.third}.dmg"
   name "Bitfocus Satellite"
@@ -29,7 +29,7 @@ cask "companion-satellite" do
     end
   end
 
-  depends_on macos: ">= :big_sur"
+  depends_on macos: ">= :monterey"
 
   app "Companion Satellite.app"
 
